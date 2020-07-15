@@ -1,0 +1,30 @@
+[
+  {
+    "id": 29,
+    "title": "Evento online, no canal do YouTube",
+    "date": "16 de Julho",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Teoria das categorias na prática com as mônadas Either e Maybe/Option",
+        "speaker": "Vitor Luiz Cavalcanti",
+        "description": "Desenvolvedor Front-End na Linte, Bacharel em Sistemas de Informação pela FIAP, organizador do TypeScript Brasil e mantenedor de mais de 30 bibliotecas open-source.",
+        "photo": "victorluiz.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Schematics: estenda os poderes da CLI do Angular",
+        "speaker": "Mayara Lopes Cardoso",
+        "description": "Desenvolvedora front-end no Itaú.",
+        "photo": "mayaralopes.jpeg"
+      },
+      {
+        "subtitle": "TALK #3",
+        "title": "Consumindo uma API GraphQL com Angular",
+        "speaker": "Thiago Adriano",
+        "description": "Microsoft (MVP), atualmente trabalha como Arquiteto de Software para TV Bandeirantes. Nesses últimos anos, focou nas tecnologias criadas pela Microsoft, mas sempre esteve antenado para as novas tecnologias que estão surgindo no mercado. Em um breve resumo, é uma pessoa apaixonada pelo que faz, tem a sua profissão como hobby.",
+        "photo": "thiagoadriano.jpeg"
+      }
+    ]
+  }
+]

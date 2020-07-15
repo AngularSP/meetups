@@ -1,0 +1,30 @@
+<div class="banner" *ngIf="(data$ | async) as data">
+  <header>
+    <div class="background"></div>
+    <section class="intro">
+      <div class="intro__logo">
+        <img src="assets/logo.svg" alt="AngularSP" width="300" height="300" />
+      </div>
+      <div class="intro__info">
+        <h1>AngularSP #{{ data.id }}</h1>
+        <h2>{{ data.date }}</h2>
+        <h3>{{ data.title }}</h3>
+      </div>
+    </section>
+  </header>
+
+  <article>
+    <div class="content">
+      <div class="content__photo">
+        <img src="assets/photos/{{data.talks[talkIdx].photo}}" alt="spekar">
+      </div>
+      <div class="content__info">
+        <span class="info__talk">{{ data.talks[talkIdx].subtitle }}</span>
+        <h1 class="info__title">{{ data.talks[talkIdx].title }}</h1>
+        <p class="info__speaker">Por <strong>{{ data.talks[talkIdx].speaker }}</strong></p>
+        <p class="info__description">{{ data.talks[talkIdx].description }}</p>
+      </div>
+    </div>
+  </article>
+</div>
+

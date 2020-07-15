@@ -1,0 +1,82 @@
+.banner header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(145deg,#0d47a1,#42a5f5);
+  min-height: 400px;
+  z-index: -1;
+  transform: skewY(8deg);
+  transform-origin: 100%;
+}
+
+.intro {
+  display: flex;
+  width: 800px;
+  color: #FFF;
+}
+
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__info h1 {
+  font-size: 4rem;
+  margin-bottom: 0.7em;
+}
+
+.intro__info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7em;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.content__photo {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.content__photo img {
+  border-radius: 50%;
+  display: inline-block;
+  height: 200px;
+  object-fit: cover;
+  padding: calc(.25rem + .25vw);
+  width: 200px;
+}
+
+.content__info {
+  flex-basis: 70%;
+  letter-spacing: .03em;
+  padding-right: 2em;
+}
+
+.info__talk {
+  display: block;
+  color: #1976d2;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+.info__title {
+  color: #1976d2;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.info__speaker {
+  margin-bottom: 1em;
+}

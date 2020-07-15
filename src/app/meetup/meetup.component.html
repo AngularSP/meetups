@@ -1,0 +1,11 @@
+<h1>Meetups AngularSP</h1>
+<ul>
+  <li *ngFor="let event of events$ | async">
+    <strong>Meetup {{event?.id}} - {{event?.title}}</strong>
+    <ul>
+      <li *ngFor="let talk of event.talks; let i = index">
+        <a [routerLink]="[event.id, 'banner', i + 1]">Talk {{i + 1}}</a>
+      </li>
+    </ul>
+  </li>
+</ul>
