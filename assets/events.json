@@ -1,0 +1,51 @@
+[
+  {
+    "id": 29,
+    "title": "Evento online, no canal do YouTube",
+    "date": "16 de Julho",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Teoria das categorias na prática com as mônadas Either e Maybe/Option",
+        "speaker": "Vitor Luiz Cavalcanti",
+        "description": "Desenvolvedor Front-End na Linte, Bacharel em Sistemas de Informação pela FIAP, organizador do TypeScript Brasil e mantenedor de mais de 30 bibliotecas open-source.",
+        "photo": "victorluiz.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Schematics: estenda os poderes da CLI do Angular",
+        "speaker": "Mayara Lopes Cardoso",
+        "description": "Engenheira Front-end no Itaú Unibanco, pós-graduada em Desenvolvimento Front-end e coorganizadora da comunidade AngularSP.",
+        "photo": "mayaralopes.jpeg"
+      },
+      {
+        "subtitle": "TALK #3",
+        "title": "Consumindo uma API GraphQL com Angular",
+        "speaker": "Thiago Adriano",
+        "description": "Microsoft (MVP), atualmente trabalha como Arquiteto de Software para TV Bandeirantes. Nesses últimos anos, focou nas tecnologias criadas pela Microsoft, mas sempre esteve antenado para as novas tecnologias que estão surgindo no mercado. Em um breve resumo, é uma pessoa apaixonada pelo que faz, tem a sua profissão como hobby.",
+        "photo": "thiagoadriano.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Parceria com Angular Bahia Online",
+    "date": "24 de Setembro",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Seus primeiros passos com Angular",
+        "speaker": "Michael Oliveira de Deus",
+        "description": "Pai, Desenvolvedor de Software e apaixonado pela tecnologia e código, gosto muito jogos online e esportes como luta e puxar ferro.",
+        "photo": "michael.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Criando uma aplicação white-label sem *ngIf",
+        "speaker": "Igor Debastiani",
+        "description": "Sou um desenvolvedor Full-Stack e tenho trabalhado com mais foco em Front-End, especificamente em aplicações mobile híbridas utilizando Ionic Capacitor.",
+        "photo": "igor.jpg"
+      }
+    ]
+  }
+]
