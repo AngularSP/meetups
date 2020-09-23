@@ -26,5 +26,26 @@
         "photo": "thiagoadriano.jpeg"
       }
     ]
+  },
+  {
+    "id": 31,
+    "title": "Parceria com Angular Bahia Online",
+    "date": "24 de Setembro",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Seus primeiros passos com Angular",
+        "speaker": "Michael Oliveira de Deus",
+        "description": "Pai, Desenvolvedor de Software e apaixonado pela tecnologia e código, gosto muito jogos online e esportes como luta e puxar ferro.",
+        "photo": "michael.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Criando uma aplicação white-label sem *ngIf",
+        "speaker": "Igor Debastiani",
+        "description": "Sou um desenvolvedor Full-Stack e tenho trabalhado com mais foco em Front-End, especificamente em aplicações mobile híbridas utilizando Ionic Capacitor.",
+        "photo": "igor.jpg"
+      }
+    ]
   }
 ]
