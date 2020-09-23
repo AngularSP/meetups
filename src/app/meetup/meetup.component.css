@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.container h1 {
+  line-height: 3em;
+}
+
+.container ul {
+  margin-bottom: 32px;
+}
+
+.container li {
+  list-style-type: none;
+}
+
+.container ul li ul {
+  display: flex;
+}
+
+.container ul li ul li {
+  padding-right: 20px;
+}
