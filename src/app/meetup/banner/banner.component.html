@@ -1,6 +1,6 @@
 <div class="banner" *ngIf="(data$ | async) as data">
   <header>
-    <div class="background"></div>
+    <div class="background" [style.background]="getBackGroundColor(data)"></div>
     <section class="intro">
       <div class="intro__logo">
         <img src="assets/logo.svg" alt="AngularSP" width="300" height="300" />
@@ -27,4 +27,3 @@
     </div>
   </article>
 </div>
-

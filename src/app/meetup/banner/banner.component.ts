@@ -28,4 +28,9 @@ export class BannerComponent implements OnInit {
     );
   }
 
+  getBackGroundColor(data) {
+    console.log(data);
+    return `linear-gradient(145deg,${data.primaryColor},${data.secondaryColor})`;
+  }
+
 }
