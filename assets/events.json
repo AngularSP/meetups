@@ -1,10 +1,8 @@
-[
-  {
+[{
     "id": 29,
     "title": "Evento online, no canal do YouTube",
     "date": "16 de Julho",
-    "talks": [
-      {
+    "talks": [{
         "subtitle": "TALK #1",
         "title": "Teoria das categorias na prática com as mônadas Either e Maybe/Option",
         "speaker": "Vitor Luiz Cavalcanti",
@@ -31,8 +29,7 @@
     "id": 31,
     "title": "Parceria com Angular Bahia Online",
     "date": "24 de Setembro",
-    "talks": [
-      {
+    "talks": [{
         "subtitle": "TALK #1",
         "title": "Seus primeiros passos com Angular",
         "speaker": "Michael Oliveira de Deus",
@@ -45,6 +42,28 @@
         "speaker": "Igor Debastiani",
         "description": "Sou um desenvolvedor Full-Stack e tenho trabalhado com mais foco em Front-End, especificamente em aplicações mobile híbridas utilizando Ionic Capacitor.",
         "photo": "igor.jpg"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Parceria com NodeBR Online",
+    "date": "29 de Outubro",
+    "primaryColor": "#ba0582",
+    "secondaryColor": "#d33479",
+    "talks": [{
+        "subtitle": "TALK #1",
+        "title": "NPM foi longe demais?",
+        "speaker": "Filipe Silva",
+        "description": "Líder técnico em Engenharia de Software na DellTech, louco por tecnologia, startups e produtos digitais.",
+        "photo": "filipe.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Automatizando a publicação de pacotes com Semantic Release",
+        "speaker": "Américo Neto",
+        "description": "Desenvolvedor web no Itaú Unibanco, pai, santista e coorganizador da comunidade AngularSP.",
+        "photo": "americo.jpg"
       }
     ]
   }
