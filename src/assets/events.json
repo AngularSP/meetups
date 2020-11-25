@@ -66,5 +66,28 @@
         "photo": "americo.jpg"
       }
     ]
+  },
+  {
+    "id": 33,
+    "title": "Parceria com  VueSP Online",
+    "date": "26 de Novembro",
+    "primaryColor": "#3CB371",
+    "secondaryColor": "#104E8B",
+    "talks": [{
+        "subtitle": "TALK #1",
+        "title": "WebComponents: Por que utilizar e como construir usando Angular Elements",
+        "speaker": "Karine Riquena Limp",
+        "description": "Formada em Análise e Desenvolvimento de Sistemas. Iniciou a carreira como programadora backend .NET MVC. Trabalha na TOTVS. Atualmente, programando em ADVPL, .NET Core e Angular.",
+        "photo": "karine.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Hello, Mr. Vue! Welcome V3",
+        "speaker": "Heitor Ramon (vuejssp)",
+        "description": "Engenheiro de Software com 15 anos de experiência, focado em arquitetura e frontend. Escritor do livro Vue.js 3 Cookbook publicado pela Packt. Lead Frontend Engineer na Kovi.",
+        "photo": "heitor.jpg"
+      }
+        
+    ]
   }
 ]
