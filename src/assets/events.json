@@ -89,5 +89,28 @@
       }
         
     ]
+  },
+  {
+    "id": 36,
+    "title": "Evento online, no canal do Youtube",
+    "date": "25 de Fevereiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [{
+        "subtitle": "TALK #1",
+        "title": "Testes Unitários com Jasmine",
+        "speaker": "William Gundim",
+        "description": "Desenvolvedor há mais de 10 anos. Atualmente, trabalhando com tecnologias web no Itaú Unibanco.",
+        "photo": "williamg.JPG"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Hello, Mr. Vue! Welcome V3",
+        "speaker": "Heitor Ramon (vuejssp)",
+        "description": "Engenheiro de Software com 15 anos de experiência, focado em arquitetura e frontend. Escritor do livro Vue.js 3 Cookbook publicado pela Packt. Lead Frontend Engineer na Kovi.",
+        "photo": "heitor.jpg"
+      }
+        
+    ]
   }
 ]
