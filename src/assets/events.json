@@ -105,10 +105,10 @@
       },
       {
         "subtitle": "TALK #2",
-        "title": "Hello, Mr. Vue! Welcome V3",
-        "speaker": "Heitor Ramon (vuejssp)",
-        "description": "Engenheiro de Software com 15 anos de experiência, focado em arquitetura e frontend. Escritor do livro Vue.js 3 Cookbook publicado pela Packt. Lead Frontend Engineer na Kovi.",
-        "photo": "heitor.jpg"
+        "title": "Micro front ends e Ng - Um Pesadelo virando sonho",
+        "speaker": "Paulo Marinho",
+        "description": "Desenvolvendo para web desde a epoca de BBS, tendo passado pelo por grandes empresas como iGSantander e Cultura como startups como ChefsClub e Plannera.",
+        "photo": "tommy.JPG"
       }
         
     ]
