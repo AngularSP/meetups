@@ -8,3 +8,5 @@ Exemplo de rota:
  - /meetups/29/banner/1
  - /meetups/29/banner/2
  - /meetups/29/banner/3
+
+https://angularsp.github.io/meetups/
