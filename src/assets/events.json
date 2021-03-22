@@ -1,8 +1,10 @@
-[{
+[
+  {
     "id": 29,
     "title": "Evento online, no canal do YouTube",
     "date": "16 de Julho",
-    "talks": [{
+    "talks": [
+      {
         "subtitle": "TALK #1",
         "title": "Teoria das categorias na prática com as mônadas Either e Maybe/Option",
         "speaker": "Vitor Luiz Cavalcanti",
@@ -29,7 +31,8 @@
     "id": 31,
     "title": "Parceria com Angular Bahia Online",
     "date": "24 de Setembro",
-    "talks": [{
+    "talks": [
+      {
         "subtitle": "TALK #1",
         "title": "Seus primeiros passos com Angular",
         "speaker": "Michael Oliveira de Deus",
@@ -51,7 +54,8 @@
     "date": "29 de Outubro",
     "primaryColor": "#ba0582",
     "secondaryColor": "#d33479",
-    "talks": [{
+    "talks": [
+      {
         "subtitle": "TALK #1",
         "title": "NPM foi longe demais?",
         "speaker": "Filipe Silva",
@@ -73,7 +77,8 @@
     "date": "26 de Novembro",
     "primaryColor": "#3CB371",
     "secondaryColor": "#104E8B",
-    "talks": [{
+    "talks": [
+      {
         "subtitle": "TALK #1",
         "title": "WebComponents: Por que utilizar e como construir usando Angular Elements",
         "speaker": "Karine Riquena Limp",
@@ -87,7 +92,6 @@
         "description": "Engenheiro de Software com 15 anos de experiência, focado em arquitetura e frontend. Escritor do livro Vue.js 3 Cookbook publicado pela Packt. Lead Frontend Engineer na Kovi.",
         "photo": "heitor.jpg"
       }
-        
     ]
   },
   {
@@ -96,7 +100,8 @@
     "date": "25 de Fevereiro",
     "primaryColor": "darkOrange",
     "secondaryColor": "gold",
-    "talks": [{
+    "talks": [
+      {
         "subtitle": "TALK #1",
         "title": "Testes Unitários com Jasmine",
         "speaker": "William Gundim",
@@ -110,7 +115,29 @@
         "description": "Desenvolvendo para web desde a epoca de BBS, tendo passado pelo por grandes empresas como iGSantander e Cultura como startups como ChefsClub e Plannera.",
         "photo": "tommy.JPG"
       }
-        
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Evento online, no canal do Youtube",
+    "date": "25 de Março",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Simples e Fácil ",
+        "speaker": "Guilherme Siquinelli",
+        "description": "Desenvolvedor há mais de 10 anos. Atualmente, trabalhando com tecnologias web no Itaú Unibanco.",
+        "photo": "williamg.JPG"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Vou ter que trabalhar com AngularJS. E agora?",
+        "speaker": "Igor Debastiani",
+        "description": "É desenvolvedor web front-end e já trabalhou com várias versões do Angular, tanto para web como para aplicações mobile híbridas. Atualmente dá manutenção em sistemas AngularJS e Angular 9.",
+        "photo": "igor_debastiani.jpeg"
+      }
     ]
   }
 ]
