@@ -141,25 +141,25 @@
     ]
   },
   {
-    "id": 38,
+    "id": 40,
     "title": "Evento online, no canal do Youtube",
-    "date": "25 de Maio",
+    "date": "24 de Junho",
     "primaryColor": "darkOrange",
     "secondaryColor": "gold",
     "talks": [
       {
         "subtitle": "TALK #1",
-        "title": "Aplicando SOLID ao Angular",
-        "speaker": "Fabio Miranda",
-        "description": "Carioca, Frontend Sênior na SHIFT e apaixonado pelo Angular. Sou um dos organizadores do Meetup Angular Rio.",
-        "photo": "fabio.jpeg"
+        "title": "Criando CRUD com PO-UI",
+        "speaker": "Jhony Eduardo Senem",
+        "description": "Jhony tem 25 anos, mora em Joinville SC, é graduado em Sistemas de Informação pelo Centro Universitário Católica - SC, Atualmente trabalhando na TOTVS como analista front-end, atuando no papel Product Owner do PO UI, possui experiências em Angular JS e Angular.",
+        "photo": "Jhony_Senem.jpg"
       },
       {
         "subtitle": "TALK #2",
-        "title": "Performance, Analytics and Reliability in Frontend Apps",
-        "speaker": "Will Mendes",
-        "description": "Wilson is a Google Developer Expert on Angular and Web Technologies international speaker. He is passionate OSS contributor and active in the communities around Angular, JavaScript, HTML5, CSS3, Workflow, web performance, security and Internet of things.",
-        "photo": "willmendes.jpeg"
+        "title": "CSS Clamp",
+        "speaker": "Thiago Piacentini",
+        "description": "Formado em Análise e Desenvolvimento de Sistemas, atuando como Desenvolvedor Front-end no Itaú, sempre buscando aprender e aplicar responsividade e acessibilidade nas interface.",
+        "photo": "Thiago_Piacentini.jpg"
       }
     ]
   }
