@@ -162,5 +162,28 @@
         "photo": "Thiago_Piacentini.jpg"
       }
     ]
+  },
+  {
+    "id": 41,
+    "title": "Evento online, no canal do Youtube",
+    "date": "29 de julho",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Angular e Supabase - Uma alternativa ao Firebase",
+        "speaker": "Kheron Machado",
+        "description": "Professor da educação básica na rede pública estadual do Paraná, atua na formação de professores para uso de tecnologia em sala de aula. É desenvolvedor há mais de 12 anos. Tinha o perfil de Webmaster no Orkut e agora Front-end e Mobile no Linkedin.Formado em Processamento pela Fatec e Mestre em Computação pela UFPR, em 2019 escreveu o livro Angular e Firebase: Construindo uma aplicação integrada com a plataforma do Google pela Casa do Código.",
+        "photo": "kheron.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Teste unitário e a busca pela cobertura ideal.",
+        "speaker": "Vinicius Ledesma",
+        "description": "Formado em Sistemas de Informação pelo Mackenzie e pós graduado em Engenharia Web/Mobile pelo Senac, trabalha com TI desde 2000. Trabalhou mais de 10 anos com sistema legado onde pode ajudar na evolução da linguagem para acompanhar os padrões de mercado das linguagens modernas. Hoje trabalha com uma linguagem moderna e sabe reconhecer o valor de cada ferramenta na hora de entregar um sistema com qualidade.",
+        "photo": "vinicius_ledesma.jpeg"
+      }
+    ]
   }
 ]
