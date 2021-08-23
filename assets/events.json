@@ -179,7 +179,30 @@
       },
       {
         "subtitle": "TALK #2",
-        "title": "Teste unitário e a busca pela cobertura ideal.",
+        "title": "Soft Skill - As habilidades secretas que não te ensinaram",
+        "speaker": "Paolo Almeida",
+        "description": "Caiçara. 32 anos. Trabalha com Produtos Digitais a mais de 10 anos. Atua como Engenheiro de Software no Itaú. Entusiasta em Open Source. Fã de Carreta Furacão. Finge que dança e surfa nas horas vagas.",
+        "photo": "paolo_almeida.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Evento online, no canal do Youtube",
+    "date": "24 de agosto",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Dependency Injection com Angular",
+        "speaker": "Guilherme Siquinelli",
+        "description": "Engenheiro Front-end no Itaú Unibanco e 15 anos de experiência, estou sempre avaliando tecnologias na tentativa de identificar que problemas podem ser resolvidos, em conjunto à aceitação da comunidade. Em busca do máximo que a Web tem a oferecer!",
+        "photo": "guilherme_siquinelli.png"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Teste unitário e a busca pela cobertura ideal",
         "speaker": "Vinicius Ledesma",
         "description": "Formado em Sistemas de Informação pelo Mackenzie e pós graduado em Engenharia Web/Mobile pelo Senac, trabalha com TI desde 2000. Trabalhou mais de 10 anos com sistema legado onde pode ajudar na evolução da linguagem para acompanhar os padrões de mercado das linguagens modernas. Hoje trabalha com uma linguagem moderna e sabe reconhecer o valor de cada ferramenta na hora de entregar um sistema com qualidade.",
         "photo": "vinicius_ledesma.jpeg"
