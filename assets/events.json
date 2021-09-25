@@ -208,5 +208,28 @@
         "photo": "vinicius_ledesma.jpeg"
       }
     ]
+  },
+    {
+    "id": 43,
+    "title": "Evento online, no canal do Youtube",
+    "date": "28 de setembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Dependency Injection com Angular",
+        "speaker": "Guilherme Siquinelli",
+        "description": "Membro co-fundador da comunidade DevParaná. Engenheiro web sênior no Itaú Unibanco. Penso que a melhor forma de aprender é pensar que estamos apenas ensinando, e assim sigo degustando tecnologias e evoluindo junto a comunidade.",
+        "photo": "guilherme_siquinelli.png"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Creepy JS",
+        "speaker": "Bruno Macabeus",
+        "description": "Sou Macabeus, trabalho ajudando a fazer compilador na OutSystems.Programo desde que conheci o Delphi e RPG Maker, passando também pelo bot para Ragnarok. Como 4fun, gosto de explorar coisas bizarras e desenvolver projetos lunáticos.",
+        "photo": "macabeus.jpeg"
+      }
+    ]
   }
 ]
