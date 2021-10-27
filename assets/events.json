@@ -231,5 +231,28 @@
         "photo": "macabeus.jpeg"
       }
     ]
+  },
+   {
+    "id": 44,
+    "title": "Evento online, no canal do Youtube",
+    "date": "28 de outubro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "RxJs e sua filosofia de programação Funcional Reativa",
+        "speaker": "Gabriel Grubba",
+        "description": "Conheço a área do desenvolvimento desde meus 17 anos, já trabalhei com Delphi e PHP, atualmente trabalho com o Angular na Privacy,  sou  apaixonado pela área do desenvolvimento web, em especial pelo ambiente ambiente de cooperação que temos. Acredito na força do Open Source.",
+        "photo": "gabriel_grubba.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Introdução de Typescript",
+        "speaker": "Wiley Marques",
+        "description": "Desenvolvedor web há quase 10 anos. Atualmente Arquiteto Líder responsável pela área de Arquitetura de Front-End no Santander Brasil. Envolvido com projetos em Angular, Flutter e nativo (Android e iOS).",
+        "photo": "wiley_marques.jpeg"
+      }
+    ]
   }
 ]
