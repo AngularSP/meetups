@@ -254,5 +254,28 @@
         "photo": "wiley_marques.jpeg"
       }
     ]
+  },
+   {
+    "id": 45,
+    "title": "Evento online, no canal do Youtube",
+    "date": "25 de novembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Aplicando boas práticas de acessibilidade na web",
+        "speaker": "Mayara Lopes Cardoso",
+        "description": "Engenheira Front-end no Itaú Unibanco, pós-graduada em Desenvolvimento Front-end e coorganizadora da comunidade AngularSP.",
+        "photo": "mayaralopes.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Iniciando um projeto em Angular durante a pandemia",
+        "speaker": "Wellington Torrejais da Silva",
+        "description": "Formado em Análise e Desenvolvimento de Sistemas, cursando Pós em Banco de Dados.Anteriormente, Administrador de Redes. Hoje trabalhando com Ruby on Rails e iniciando com Angular.Moro em Maringá no Paraná e transformei minha casa numa República, tenho 2 gatos e 2 irmãos que moram comigo.",
+        "photo": "wtorrejais.jpg"
+      }
+    ]
   }
 ]
