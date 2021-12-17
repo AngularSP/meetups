@@ -277,5 +277,28 @@
         "photo": "wtorrejais.jpg"
       }
     ]
+  },
+   {
+    "id": 46,
+    "title": "Evento online, no canal do Youtube",
+    "date": "21 de dezembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Introdução a testes Untiários com Angular",
+        "speaker": "Ivonaldo Junior da Silva Soares",
+        "description": "Desenvolvedor Front-End há 6 anos na área com experiência em empresas de diversas áreas, nascido e criado no interior do RJ, mas atualmente morando em são paulo, apaixonado por comunidades de desenvolvimento de softwares, também gosto de beber uma cerveja e fazer um churrasco com os amigos.",
+        "photo": "Ivonaldo.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Quick wins pra sua carreira decolar 🚀",
+        "speaker": "Paolo Almeida",
+        "description": "Caiçara, 32 anos, TechLead e Dev Advocate no @itau, co-organizador no @angularSP. Fazendo coisas pra internet há mais de 12 anos, entusiasta em open source e comunidades, nas horas vagas se arrisca na dança e esportes radicais, também é fã da carreta furacão.",
+        "photo": "paolo_almeida.jpeg"
+      }
+    ]
   }
 ]
