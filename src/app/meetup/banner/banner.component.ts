@@ -8,7 +8,7 @@ import { MeetupService } from '../meetup.service';
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
   public data$: Observable<any>;

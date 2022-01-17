@@ -1,18 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  height: 627px;
+  background-color: #fff;
+  .background {
+    position: absolute;
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    min-height: 350px;
+    z-index: 1;
+    transform: skewY(6deg);
+    transform-origin: 100%;
+  }
+}
+
+.linkedin-width {
+  width: 1200px;
+}
+
+.instagram-width {
+  width: 1080px;
+}
+
+.facebook-width {
+  width: 960px;
+}
+
 .banner header {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 400px;
-}
-
-.background {
-  position: absolute;
-  width: 100%;
-  background: linear-gradient(145deg, #0d47a1, #42a5f5);
-  min-height: 400px;
-  z-index: -1;
-  transform: skewY(8deg);
-  transform-origin: 100%;
 }
 
 .intro {
