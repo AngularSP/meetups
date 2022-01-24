@@ -300,5 +300,28 @@
         "photo": "paolo_almeida.jpeg"
       }
     ]
+  },
+  {
+    "id": 47,
+    "title": "Evento online, no canal do Youtube",
+    "date": "24 de janeiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Criptografia e Autenticação biométrica nativa no navegador",
+        "speaker": "William Grasel",
+        "description": "Desenvolvedor Web apaixonado com mais de 18 anos de experiência na área, Google Developer Expert, Microsoft MVP, especializado em FrontEnd com Single Page Apps e Progressive Web Apps, contribuidor open source, consultor, organizador de comunidades, palestrante, amante de JavaScript / TypeScript, performance, segurança e programação funcional, sempre fascinado por novas tecnologias e de olho nesse tal de Web Assembly.",
+        "photo": "william_grasel.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Programação Orientada a Interfaces no Angular",
+        "speaker": "Andrew Rosário",
+        "description": "Pós-Graduado em Desenvolvimento Web e Mobile. Atua como Desenvolvedor Front-End na Shift e produz conteúdos para a comunidade a partir de vídeos e artigos.",
+        "photo": "andrew_rosario.jpg"
+      }
+    ]
   }
 ]
