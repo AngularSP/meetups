@@ -323,5 +323,28 @@
         "photo": "andrew_rosario.jpg"
       }
     ]
+  },
+  {
+    "id": 48,
+    "title": "Evento online, no canal do Youtube",
+    "date": "25 de janeiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Introdução ao AWS Amplify",
+        "speaker": "Ricardo Mello",
+        "description": "Engenheiro de Software, AWS Community Builder, amante de JavaScript e TypeScript, ciclista e viciado em música, escreve artigos e é organizador do Angular Rio.",
+        "photo": "ricardo_mello.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Acessibilidade no Angular",
+        "speaker": "Geovana Silva Ribeiro",
+        "description": "Pós-Graduado em Desenvolvimento Web e Mobile. Atua como Desenvolvedor Front-End na Shift e produz conteúdos para a comunidade a partir de vídeos e artigos.",
+        "photo": "geovana_silva.png"
+      }
+    ]
   }
 ]
