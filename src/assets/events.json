@@ -350,7 +350,7 @@
   {
     "id": 49,
     "title": "Evento online, no canal do Youtube",
-    "date": "22 de fevereiro",
+    "date": "29 de março",
     "primaryColor": "darkOrange",
     "secondaryColor": "gold",
     "talks": [
@@ -358,7 +358,7 @@
         "subtitle": "TALK #1",
         "title": "Programação reativa com Angular e RxJS",
         "speaker": "Pedro Cunha",
-        "description": "Engenheiro de Software, AWS Community Builder, amante de JavaScript e TypeScript, ciclista e viciado em música, escreve artigos e é organizador do Angular Rio.",
+        "description": "Entrei no mundo da tecnologia devido a pandemia, e foi uma das melhores coisas que já me aconteceu. Apaixonado por Angular desde o primeiro momento, venho dia após dia desbravando as maravilhas do framework e de todo universo de TI, buscando me tornar um DEV e um ser humano mais completo, podendo contribuir cada vez mais por um mundo melhor!",
         "photo": "pedro_cunha.jpg"
       },
       {
