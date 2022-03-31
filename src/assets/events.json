@@ -350,7 +350,30 @@
   {
     "id": 49,
     "title": "Evento online, no canal do Youtube",
-    "date": "29 de março",
+    "date": "31 de março",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Depois do sênior, para onde eu posso ir?",
+        "speaker": "Alvaro Camillo Neto",
+        "description": "Alvaro é um engenheiro de software do Brasil. Ele trabalha na industria de tecnologia há mais de 15 anos dedicados ao desenvolvimento de soluções empresariais e financeiras. Alvaro é um entusiasta da tecnologia e vê no compartilhamento do conhecimento uma oportunidade de ajudar a comunidade que tanto o ajudou e a melhor forma de aprendizado.",
+        "photo": "alvaro.png"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Governança de Micro FrontEnds",
+        "speaker": "William Grasel",
+        "description": "Desenvolvedor Web apaixonado com mais de 18 anos de experiência na área, Google Developer Expert, Microsoft MVP, especializado em FrontEnd com Single Page Apps e Progressive Web Apps, contribuidor open source, consultor, organizador de comunidades, palestrante, amante de JavaScript / TypeScript, performance, segurança e programação funcional, sempre fascinado por novas tecnologias e de olho nesse tal de Web Assembly.",
+        "photo": "william_grasel.jpg"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Evento online, no canal do Youtube",
+    "date": "31 de abril",
     "primaryColor": "darkOrange",
     "secondaryColor": "gold",
     "talks": [
