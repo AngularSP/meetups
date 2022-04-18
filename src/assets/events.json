@@ -373,7 +373,7 @@
   {
     "id": 50,
     "title": "Evento online, no canal do Youtube",
-    "date": "31 de abril",
+    "date": "19 de abril",
     "primaryColor": "darkOrange",
     "secondaryColor": "gold",
     "talks": [
@@ -386,10 +386,10 @@
       },
       {
         "subtitle": "TALK #2",
-        "title": "Governança de Micro FrontEnds",
-        "speaker": "William Grasel",
-        "description": "Desenvolvedor Web apaixonado com mais de 18 anos de experiência na área, Google Developer Expert, Microsoft MVP, especializado em FrontEnd com Single Page Apps e Progressive Web Apps, contribuidor open source, consultor, organizador de comunidades, palestrante, amante de JavaScript / TypeScript, performance, segurança e programação funcional, sempre fascinado por novas tecnologias e de olho nesse tal de Web Assembly.",
-        "photo": "william_grasel.jpg"
+        "title": "Minimal API com .NEt 6",
+        "speaker": "Robson Gomes Junior ",
+        "description": "Iniciei minha carreira na universidade como estagiário de TI em 2014 e logo fui convidado a integrar  o corpo técnico do setor de TI, com o tempo fui notado pela capacidade de tomar decisões, de liderar e por meio das minhas capacitações tive bons resultados e fui promovido a cargos de gestão, principalmente de desenvolvimento e sistemas, me levando ao alto nível de gestão de TI do Governo do Estado do Rio de Janeiro, mas em 2020 percebi que o que eu sempre quis fazer era desenvolver. Pedi exoneração do meu cargo público em outubro deste mesmo ano e em abril de 2021 iniciei minha carreira como desenvolvedor junior backend na Totvs. Escolhi descer alguns degraus para tomar impulso e fazer realmente só o que gosto.",
+        "photo": "robson_gomes_junior.jpg"
       }
     ]
   }
