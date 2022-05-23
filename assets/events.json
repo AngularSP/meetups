@@ -392,5 +392,28 @@
         "photo": "robson_gomes_junior.jpg"
       }
     ]
+  },
+  {
+    "id": 51,
+    "title": "Evento online, no canal do Youtube",
+    "date": "24 de maio",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Perspectivas de acessibilidade no século XXI: O recurso além da adaptação",
+        "speaker": "Leandro Alcolumbre",
+        "description": "Leandro Alcolumbre é bacharel em Direito e entusiasta de tecnologia, concentrando seus estudos nas temáticas de acessibilidade, educação inclusiva, bem como o papel das TICs na autonomia e inclusão de pessoas com deficiência.",
+        "photo": "leandro_alcolumbre.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Testes no Angular com Testing Library",
+        "speaker": "Andrew Rosário",
+        "description": "Pós-Graduado em Desenvolvimento Web e Mobile. É apaixonado por Angular e Front-end. Produz conteúdos para a comunidade a partir de vídeos e artigos.",
+        "photo": "andrew_rosario.jpg"
+      }
+    ]
   }
 ]
