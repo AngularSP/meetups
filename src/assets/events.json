@@ -415,5 +415,28 @@
         "photo": "andrew_rosario.jpg"
       }
     ]
+  },
+  {
+    "id": 52,
+    "title": "Evento online, no canal do Youtube",
+    "date": "14 de Junho",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "O poder da programação reativa com RxJs",
+        "speaker": "Fábio Miranda",
+        "description": "Carioca, Frontend Sênior no Itaú, apaixonado pelo Angular e um dos coorganizadores do Meetup Angular Rio. Quando cheguei no Angular, era tudo mato(2017).",
+        "photo": "fabio_miranda.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Torturando o Angular: uma introdução ao roteamento e um pouco de RxJs",
+        "speaker": "Gabriel Grubba",
+        "description": "Perdidamente apaixonado por open source, o maluco que faz as coisas em typelevel no TypeScript. Melhorando o mundo através do Software. Atualmente trabalhando com Angular na Privacy",
+        "photo": "gabriel_grubba.jpg"
+      }
+    ]
   }
 ]
