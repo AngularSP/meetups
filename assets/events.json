@@ -209,7 +209,7 @@
       }
     ]
   },
-    {
+  {
     "id": 43,
     "title": "Evento online, no canal do Youtube",
     "date": "28 de setembro",
@@ -232,7 +232,7 @@
       }
     ]
   },
-   {
+  {
     "id": 44,
     "title": "Evento online, no canal do Youtube",
     "date": "28 de outubro",
@@ -255,7 +255,7 @@
       }
     ]
   },
-   {
+  {
     "id": 45,
     "title": "Evento online, no canal do Youtube",
     "date": "25 de novembro",
@@ -278,7 +278,7 @@
       }
     ]
   },
-   {
+  {
     "id": 46,
     "title": "Evento online, no canal do Youtube",
     "date": "21 de dezembro",
@@ -459,6 +459,29 @@
         "speaker": "Vinicius Lagêdo",
         "description": "Aproximadamente 10 anos de experiência em front-end e ainda descobrindo novas soluções para os mesmos problemas",
         "photo": "vinicius_lagedo.png"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Evento online, no canal do Youtube",
+    "date": "25 de outubro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "API REST em Node.js: Boas práticas em produção",
+        "speaker": "Rodrigo Kamada",
+        "description": "Nesta palestra serão apresentados os conceitos, fundamentos e padrões de uma API REST e as boas práticas de implementação usadas em produção em uma aplicação Node.js com TypeScript, Express e MongoDB.",
+        "photo": "Rodrigo_Kamada.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Desmistificando o Typescript",
+        "speaker": "Joao Paulo Avila",
+        "description": "Palestra introdutória ao typescript, mostrando algumas features e como elas funcionam, para poder auxiliar quem está iniciando com o TS.",
+        "photo": "Joao_Paulo_Avila.JPG"
       }
     ]
   }
