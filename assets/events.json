@@ -484,5 +484,28 @@
         "photo": "Joao_Paulo_Avila.JPG"
       }
     ]
+  },
+  {
+    "id": 55,
+    "title": "Evento presencial, no Itaú",
+    "date": "23 de novembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "O segredo dos Times de Engenharia Escaláveis: Criando uma cultura de Documentação",
+        "speaker": "Paolo Almeida",
+        "description": "Nesta talk, abordo numa visão 360, como construir uma cultura de colaboração e documentação pode tornar times de Engenharia muito mais escaláveis. Trazendo as principais dores e desafios dentro desta jornada.",
+        "photo": "paolo_almeida.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Desenvolvendo aplicativos nativos usando Angular e NativeScript",
+        "speaker": "Eduardo Speroni",
+        "description": "NativeScript permite que você tenha acesso direto a APIs nativas (Java/Kotlin/Objective-C/Swift) diretamente a partir de JavaScript. Esta palestra aborda como isso é feito e como é possível utilizar Angular para desenvolver uma aplicação nativa utilizando fundamentos web, sem utilizar uma WebView.",
+        "photo": "eduardo_speroni.jpg"
+      }
+    ]
   }
 ]
