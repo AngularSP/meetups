@@ -26,8 +26,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = ["banner"];
 
+const _c0 = ["banner"];
 const _c1 = function (a0, a1, a2) {
   return {
     "linkedin-width": a0,
@@ -35,7 +35,6 @@ const _c1 = function (a0, a1, a2) {
     "facebook-width": a2
   };
 };
-
 function BannerComponent_div_2_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 6, 7)(2, "header");
@@ -70,7 +69,6 @@ function BannerComponent_div_2_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](28);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()();
   }
-
   if (rf & 2) {
     const data_r1 = ctx.ngIf;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
@@ -96,7 +94,6 @@ function BannerComponent_div_2_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", data_r1.talks[ctx_r0.talkIdx].description, " ");
   }
 }
-
 class BannerComponent {
   constructor(meetupService, router) {
     this.meetupService = meetupService;
@@ -104,7 +101,6 @@ class BannerComponent {
     this.talkIdx = 0;
     this.imageSize = 'Linkedin';
   }
-
   ngOnInit() {
     const meetupId = this.router.snapshot.params.id;
     this.talkIdx = this.router.snapshot.params.talk - 1;
@@ -112,25 +108,20 @@ class BannerComponent {
       this.bannerName = (0,_utils_slugify__WEBPACK_IMPORTED_MODULE_1__.slugfy)(item?.talks[this.talkIdx]?.title);
     }));
   }
-
   getBackGroundColor(data) {
     return `linear-gradient(145deg,${data.primaryColor},${data.secondaryColor})`;
   }
-
   downloadImage(type) {
     switch (type) {
       case 'png':
         return this.savePng();
-
       case 'jpeg':
         return this.saveJpeg();
     }
   }
-
   selectImageSize(size) {
     this.imageSize = size;
   }
-
   savePng() {
     (0,html_to_image__WEBPACK_IMPORTED_MODULE_0__.toPng)(this.banner.nativeElement).then(dataUrl => {
       const link = document.createElement('a');
@@ -141,7 +132,6 @@ class BannerComponent {
       console.log(err);
     });
   }
-
   saveJpeg() {
     (0,html_to_image__WEBPACK_IMPORTED_MODULE_0__.toJpeg)(this.banner.nativeElement, {
       quality: 0.95
@@ -154,81 +144,75 @@ class BannerComponent {
       console.log(err);
     });
   }
-
+  static #_ = this.ɵfac = function BannerComponent_Factory(t) {
+    return new (t || BannerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_meetup_service__WEBPACK_IMPORTED_MODULE_2__.MeetupService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.ActivatedRoute));
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
+    type: BannerComponent,
+    selectors: [["app-banner"]],
+    viewQuery: function BannerComponent_Query(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c0, 5);
+      }
+      if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.banner = _t.first);
+      }
+    },
+    decls: 20,
+    vars: 3,
+    consts: [[1, "container"], [1, "column"], ["class", "banner", 3, "ngClass", 4, "ngIf"], [1, "column", "actions"], [3, "click"], [1, "column", "save-image"], [1, "banner", 3, "ngClass"], ["banner", ""], [1, "background", 3, "ngClass"], [1, "intro"], [1, "intro__logo"], ["src", "assets/logo.svg", "alt", "AngularSP", "width", "300", "height", "300"], [1, "intro__info"], [1, "content"], [1, "content__photo"], ["alt", "spekar", 3, "src"], [1, "content__info"], [1, "info__talk"], [1, "info__title"], [1, "info__speaker"], [1, "info__description"]],
+    template: function BannerComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, BannerComponent_div_2_Template, 29, 20, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipe"](3, "async");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "div", 3)(5, "section", 3)(6, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, " Selecione o tamanho do Banner: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_8_listener() {
+          return ctx.selectImageSize("Instagram");
+        });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Instagram");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](10, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_10_listener() {
+          return ctx.selectImageSize("Linkedin");
+        });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](11, "Linkedin");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](12, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_12_listener() {
+          return ctx.selectImageSize("Facebook");
+        });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](13, "Facebook");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "section", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](15, " Salve a imagem: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_16_listener() {
+          return ctx.downloadImage("png");
+        });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "Download PNG");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_18_listener() {
+          return ctx.downloadImage("jpeg");
+        });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](19, "Download JPEG");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()();
+      }
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipeBind1"](3, 1, ctx.data$));
+      }
+    },
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_7__.AsyncPipe],
+    styles: [".container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: row;\n}\n\n.banner[_ngcontent-%COMP%] {\n  max-height: 1080px;\n  background-color: #fff;\n}\n.banner[_ngcontent-%COMP%]   .background[_ngcontent-%COMP%] {\n  position: absolute;\n  background: linear-gradient(145deg, #0d47a1, #42a5f5);\n  min-height: 350px;\n  z-index: 1;\n  transform: skewY(6deg);\n  transform-origin: 100%;\n}\n\n.linkedin-width[_ngcontent-%COMP%] {\n  width: 1200px;\n}\n\n.instagram-width[_ngcontent-%COMP%] {\n  width: 1080px;\n}\n\n.facebook-width[_ngcontent-%COMP%] {\n  width: 960px;\n}\n\n.banner[_ngcontent-%COMP%]   header[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 350px;\n}\n\n.intro[_ngcontent-%COMP%] {\n  display: flex;\n  width: 850px;\n  color: #fff;\n  z-index: 1;\n}\n\n.intro__info[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.intro__info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 4rem;\n  margin-bottom: 0.7em;\n}\n\n.intro__info[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n  margin-bottom: 0.7em;\n}\n\n.content[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n}\n\n.content__photo[_ngcontent-%COMP%] {\n  flex-basis: 30%;\n  display: flex;\n  justify-content: center;\n}\n\n.content__photo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  border-radius: 50%;\n  display: inline-block;\n  height: 200px;\n  object-fit: cover;\n  padding: calc(0.25rem + 0.25vw);\n  width: 200px;\n}\n\n.content__info[_ngcontent-%COMP%] {\n  flex-basis: 70%;\n  letter-spacing: 0.03em;\n  padding-right: 2em;\n}\n\n.info__talk[_ngcontent-%COMP%] {\n  display: block;\n  color: #1976d2;\n  text-transform: uppercase;\n  margin-bottom: 0.5em;\n}\n\n.info__title[_ngcontent-%COMP%] {\n  color: #1976d2;\n  text-transform: uppercase;\n  margin-bottom: 1em;\n  font-size: 1.35em;\n}\n\n.info__speaker[_ngcontent-%COMP%] {\n  margin-bottom: 1em;\n}\n\n.info__description[_ngcontent-%COMP%] {\n  margin-bottom: 10px;\n}\n\n.column[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton[_ngcontent-%COMP%] {\n  width: 200px;\n  background-color: #1976d2;\n  border: none;\n  color: white;\n  cursor: pointer;\n  padding: 15px 32px;\n  margin: 10px 0;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n}\n\n.actions[_ngcontent-%COMP%] {\n  padding: 5px;\n  width: -webkit-fill-available;\n  width: fill-available;\n  justify-content: center;\n  align-items: center;\n}\n\n.save-image[_ngcontent-%COMP%] {\n  padding-top: 3em;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceURL=webpack://./src/app/meetup/banner/banner.component.scss */\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbWVldHVwL2Jhbm5lci9iYW5uZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLGtCQUFBO0VBQ0Esc0JBQUE7QUFDRjtBQUFFO0VBQ0Usa0JBQUE7RUFDQSxxREFBQTtFQUNBLGlCQUFBO0VBQ0EsVUFBQTtFQUNBLHNCQUFBO0VBQ0Esc0JBQUE7QUFFSjs7QUFFQTtFQUNFLGFBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHVCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0Esb0JBQUE7QUFDRjs7QUFFQTtFQUNFLGlCQUFBO0VBQ0Esb0JBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSx1QkFBQTtBQUNGOztBQUVBO0VBQ0UsZUFBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtBQUNGOztBQUVBO0VBQ0Usa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGFBQUE7RUFDQSxpQkFBQTtFQUNBLCtCQUFBO0VBQ0EsWUFBQTtBQUNGOztBQUVBO0VBQ0UsZUFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFDQSxvQkFBQTtBQUNGOztBQUVBO0VBQ0UsY0FBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtBQUNGOztBQUVBO0VBQ0Usa0JBQUE7QUFDRjs7QUFFQTtFQUNFLG1CQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxxQkFBQTtFQUNBLGVBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSw2QkFBQTtFQUFBLHFCQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUVBO0VBQ0UsZ0JBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbn1cblxuLmJhbm5lciB7XG4gIG1heC1oZWlnaHQ6IDEwODBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbn1cbi5iYW5uZXIgLmJhY2tncm91bmQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxNDVkZWcsICMwZDQ3YTEsICM0MmE1ZjUpO1xuICBtaW4taGVpZ2h0OiAzNTBweDtcbiAgei1pbmRleDogMTtcbiAgdHJhbnNmb3JtOiBza2V3WSg2ZGVnKTtcbiAgdHJhbnNmb3JtLW9yaWdpbjogMTAwJTtcbn1cblxuLmxpbmtlZGluLXdpZHRoIHtcbiAgd2lkdGg6IDEyMDBweDtcbn1cblxuLmluc3RhZ3JhbS13aWR0aCB7XG4gIHdpZHRoOiAxMDgwcHg7XG59XG5cbi5mYWNlYm9vay13aWR0aCB7XG4gIHdpZHRoOiA5NjBweDtcbn1cblxuLmJhbm5lciBoZWFkZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWluLWhlaWdodDogMzUwcHg7XG59XG5cbi5pbnRybyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHdpZHRoOiA4NTBweDtcbiAgY29sb3I6ICNmZmY7XG4gIHotaW5kZXg6IDE7XG59XG5cbi5pbnRyb19faW5mbyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4uaW50cm9fX2luZm8gaDEge1xuICBmb250LXNpemU6IDRyZW07XG4gIG1hcmdpbi1ib3R0b206IDAuN2VtO1xufVxuXG4uaW50cm9fX2luZm8gaDIge1xuICBmb250LXNpemU6IDEuNXJlbTtcbiAgbWFyZ2luLWJvdHRvbTogMC43ZW07XG59XG5cbi5jb250ZW50IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb250ZW50X19waG90byB7XG4gIGZsZXgtYmFzaXM6IDMwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb250ZW50X19waG90byBpbWcge1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgaGVpZ2h0OiAyMDBweDtcbiAgb2JqZWN0LWZpdDogY292ZXI7XG4gIHBhZGRpbmc6IGNhbGMoMC4yNXJlbSArIDAuMjV2dyk7XG4gIHdpZHRoOiAyMDBweDtcbn1cblxuLmNvbnRlbnRfX2luZm8ge1xuICBmbGV4LWJhc2lzOiA3MCU7XG4gIGxldHRlci1zcGFjaW5nOiAwLjAzZW07XG4gIHBhZGRpbmctcmlnaHQ6IDJlbTtcbn1cblxuLmluZm9fX3RhbGsge1xuICBkaXNwbGF5OiBibG9jaztcbiAgY29sb3I6ICMxOTc2ZDI7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIG1hcmdpbi1ib3R0b206IDAuNWVtO1xufVxuXG4uaW5mb19fdGl0bGUge1xuICBjb2xvcjogIzE5NzZkMjtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xuICBmb250LXNpemU6IDEuMzVlbTtcbn1cblxuLmluZm9fX3NwZWFrZXIge1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG5cbi5pbmZvX19kZXNjcmlwdGlvbiB7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi5jb2x1bW4ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuXG5idXR0b24ge1xuICB3aWR0aDogMjAwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICMxOTc2ZDI7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IHdoaXRlO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHBhZGRpbmc6IDE1cHggMzJweDtcbiAgbWFyZ2luOiAxMHB4IDA7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLmFjdGlvbnMge1xuICBwYWRkaW5nOiA1cHg7XG4gIHdpZHRoOiBmaWxsLWF2YWlsYWJsZTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5zYXZlLWltYWdlIHtcbiAgcGFkZGluZy10b3A6IDNlbTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
 }
-
-BannerComponent.ɵfac = function BannerComponent_Factory(t) {
-  return new (t || BannerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_meetup_service__WEBPACK_IMPORTED_MODULE_2__.MeetupService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.ActivatedRoute));
-};
-
-BannerComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
-  type: BannerComponent,
-  selectors: [["app-banner"]],
-  viewQuery: function BannerComponent_Query(rf, ctx) {
-    if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c0, 5);
-    }
-
-    if (rf & 2) {
-      let _t;
-
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.banner = _t.first);
-    }
-  },
-  decls: 20,
-  vars: 3,
-  consts: [[1, "container"], [1, "column"], ["class", "banner", 3, "ngClass", 4, "ngIf"], [1, "column", "actions"], [3, "click"], [1, "column", "save-image"], [1, "banner", 3, "ngClass"], ["banner", ""], [1, "background", 3, "ngClass"], [1, "intro"], [1, "intro__logo"], ["src", "assets/logo.svg", "alt", "AngularSP", "width", "300", "height", "300"], [1, "intro__info"], [1, "content"], [1, "content__photo"], ["alt", "spekar", 3, "src"], [1, "content__info"], [1, "info__talk"], [1, "info__title"], [1, "info__speaker"], [1, "info__description"]],
-  template: function BannerComponent_Template(rf, ctx) {
-    if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, BannerComponent_div_2_Template, 29, 20, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipe"](3, "async");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "div", 3)(5, "section", 3)(6, "span");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, " Selecione o tamanho do Banner: ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "button", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_8_listener() {
-        return ctx.selectImageSize("Instagram");
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Instagram");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](10, "button", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_10_listener() {
-        return ctx.selectImageSize("Linkedin");
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](11, "Linkedin");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](12, "button", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_12_listener() {
-        return ctx.selectImageSize("Facebook");
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](13, "Facebook");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "section", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](15, " Salve a imagem: ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "button", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_16_listener() {
-        return ctx.downloadImage("png");
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "Download PNG");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "button", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function BannerComponent_Template_button_click_18_listener() {
-        return ctx.downloadImage("jpeg");
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](19, "Download JPEG");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()();
-    }
-
-    if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipeBind1"](3, 1, ctx.data$));
-    }
-  },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_7__.AsyncPipe],
-  styles: [".container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: row;\n}\n\n.banner[_ngcontent-%COMP%] {\n  max-height: 1080px;\n  background-color: #fff;\n}\n\n.banner[_ngcontent-%COMP%]   .background[_ngcontent-%COMP%] {\n  position: absolute;\n  background: linear-gradient(145deg, #0d47a1, #42a5f5);\n  min-height: 350px;\n  z-index: 1;\n  transform: skewY(6deg);\n  transform-origin: 100%;\n}\n\n.linkedin-width[_ngcontent-%COMP%] {\n  width: 1200px;\n}\n\n.instagram-width[_ngcontent-%COMP%] {\n  width: 1080px;\n}\n\n.facebook-width[_ngcontent-%COMP%] {\n  width: 960px;\n}\n\n.banner[_ngcontent-%COMP%]   header[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 350px;\n}\n\n.intro[_ngcontent-%COMP%] {\n  display: flex;\n  width: 850px;\n  color: #fff;\n  z-index: 1;\n}\n\n.intro__info[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.intro__info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 4rem;\n  margin-bottom: 0.7em;\n}\n\n.intro__info[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-size: 1.5rem;\n  margin-bottom: 0.7em;\n}\n\n.content[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n}\n\n.content__photo[_ngcontent-%COMP%] {\n  flex-basis: 30%;\n  display: flex;\n  justify-content: center;\n}\n\n.content__photo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  border-radius: 50%;\n  display: inline-block;\n  height: 200px;\n  object-fit: cover;\n  padding: calc(0.25rem + 0.25vw);\n  width: 200px;\n}\n\n.content__info[_ngcontent-%COMP%] {\n  flex-basis: 70%;\n  letter-spacing: 0.03em;\n  padding-right: 2em;\n}\n\n.info__talk[_ngcontent-%COMP%] {\n  display: block;\n  color: #1976d2;\n  text-transform: uppercase;\n  margin-bottom: 0.5em;\n}\n\n.info__title[_ngcontent-%COMP%] {\n  color: #1976d2;\n  text-transform: uppercase;\n  margin-bottom: 1em;\n  font-size: 1.35em;\n}\n\n.info__speaker[_ngcontent-%COMP%] {\n  margin-bottom: 1em;\n}\n\n.info__description[_ngcontent-%COMP%] {\n  margin-bottom: 10px;\n}\n\n.column[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton[_ngcontent-%COMP%] {\n  width: 200px;\n  background-color: #1976d2;\n  border: none;\n  color: white;\n  cursor: pointer;\n  padding: 15px 32px;\n  margin: 10px 0;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n}\n\n.actions[_ngcontent-%COMP%] {\n  padding: 5px;\n  width: -webkit-fill-available;\n  width: fill-available;\n  justify-content: center;\n  align-items: center;\n}\n\n.save-image[_ngcontent-%COMP%] {\n  padding-top: 3em;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhbm5lci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUVBO0VBQ0Usa0JBQUE7RUFDQSxzQkFBQTtBQUNGOztBQUFFO0VBQ0Usa0JBQUE7RUFDQSxxREFBQTtFQUNBLGlCQUFBO0VBQ0EsVUFBQTtFQUNBLHNCQUFBO0VBQ0Esc0JBQUE7QUFFSjs7QUFFQTtFQUNFLGFBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHVCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0Esb0JBQUE7QUFDRjs7QUFFQTtFQUNFLGlCQUFBO0VBQ0Esb0JBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSx1QkFBQTtBQUNGOztBQUVBO0VBQ0UsZUFBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtBQUNGOztBQUVBO0VBQ0Usa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGFBQUE7RUFDQSxpQkFBQTtFQUNBLCtCQUFBO0VBQ0EsWUFBQTtBQUNGOztBQUVBO0VBQ0UsZUFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFDQSxvQkFBQTtBQUNGOztBQUVBO0VBQ0UsY0FBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtBQUNGOztBQUVBO0VBQ0Usa0JBQUE7QUFDRjs7QUFFQTtFQUNFLG1CQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxxQkFBQTtFQUNBLGVBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSw2QkFBQTtFQUFBLHFCQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUVBO0VBQ0UsZ0JBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FBQ0YiLCJmaWxlIjoiYmFubmVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG5cbi5iYW5uZXIge1xuICBtYXgtaGVpZ2h0OiAxMDgwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIC5iYWNrZ3JvdW5kIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE0NWRlZywgIzBkNDdhMSwgIzQyYTVmNSk7XG4gICAgbWluLWhlaWdodDogMzUwcHg7XG4gICAgei1pbmRleDogMTtcbiAgICB0cmFuc2Zvcm06IHNrZXdZKDZkZWcpO1xuICAgIHRyYW5zZm9ybS1vcmlnaW46IDEwMCU7XG4gIH1cbn1cblxuLmxpbmtlZGluLXdpZHRoIHtcbiAgd2lkdGg6IDEyMDBweDtcbn1cblxuLmluc3RhZ3JhbS13aWR0aCB7XG4gIHdpZHRoOiAxMDgwcHg7XG59XG5cbi5mYWNlYm9vay13aWR0aCB7XG4gIHdpZHRoOiA5NjBweDtcbn1cblxuLmJhbm5lciBoZWFkZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWluLWhlaWdodDogMzUwcHg7XG59XG5cbi5pbnRybyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHdpZHRoOiA4NTBweDtcbiAgY29sb3I6ICNmZmY7XG4gIHotaW5kZXg6IDE7XG59XG5cbi5pbnRyb19faW5mbyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4uaW50cm9fX2luZm8gaDEge1xuICBmb250LXNpemU6IDRyZW07XG4gIG1hcmdpbi1ib3R0b206IDAuN2VtO1xufVxuXG4uaW50cm9fX2luZm8gaDIge1xuICBmb250LXNpemU6IDEuNXJlbTtcbiAgbWFyZ2luLWJvdHRvbTogMC43ZW07XG59XG5cbi5jb250ZW50IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb250ZW50X19waG90byB7XG4gIGZsZXgtYmFzaXM6IDMwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5jb250ZW50X19waG90byBpbWcge1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgaGVpZ2h0OiAyMDBweDtcbiAgb2JqZWN0LWZpdDogY292ZXI7XG4gIHBhZGRpbmc6IGNhbGMoMC4yNXJlbSArIDAuMjV2dyk7XG4gIHdpZHRoOiAyMDBweDtcbn1cblxuLmNvbnRlbnRfX2luZm8ge1xuICBmbGV4LWJhc2lzOiA3MCU7XG4gIGxldHRlci1zcGFjaW5nOiAwLjAzZW07XG4gIHBhZGRpbmctcmlnaHQ6IDJlbTtcbn1cblxuLmluZm9fX3RhbGsge1xuICBkaXNwbGF5OiBibG9jaztcbiAgY29sb3I6ICMxOTc2ZDI7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIG1hcmdpbi1ib3R0b206IDAuNWVtO1xufVxuXG4uaW5mb19fdGl0bGUge1xuICBjb2xvcjogIzE5NzZkMjtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xuICBmb250LXNpemU6IDEuMzVlbTtcbn1cblxuLmluZm9fX3NwZWFrZXIge1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG5cbi5pbmZvX19kZXNjcmlwdGlvbiB7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi5jb2x1bW4ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuXG5idXR0b24ge1xuICB3aWR0aDogMjAwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICMxOTc2ZDI7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IHdoaXRlO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHBhZGRpbmc6IDE1cHggMzJweDtcbiAgbWFyZ2luOiAxMHB4IDA7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLmFjdGlvbnMge1xuICBwYWRkaW5nOiA1cHg7XG4gIHdpZHRoOiBmaWxsLWF2YWlsYWJsZTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5zYXZlLWltYWdlIHtcbiAgcGFkZGluZy10b3A6IDNlbTtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4iXX0= */"]
-});
 
 /***/ }),
 
@@ -251,23 +235,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const routes = [
-    {
-        path: '',
-        component: _meetup_component__WEBPACK_IMPORTED_MODULE_1__.MeetupComponent,
-    },
-    {
-        path: ':id/banner/:talk',
-        component: _banner_banner_component__WEBPACK_IMPORTED_MODULE_0__.BannerComponent,
-    }
-];
+const routes = [{
+  path: '',
+  component: _meetup_component__WEBPACK_IMPORTED_MODULE_1__.MeetupComponent
+}, {
+  path: ':id/banner/:talk',
+  component: _banner_banner_component__WEBPACK_IMPORTED_MODULE_0__.BannerComponent
+}];
 class MeetupRoutingModule {
+  static #_ = this.ɵfac = function MeetupRoutingModule_Factory(t) {
+    return new (t || MeetupRoutingModule)();
+  };
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
+    type: MeetupRoutingModule
+  });
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule.forChild(routes), _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule]
+  });
 }
-MeetupRoutingModule.ɵfac = function MeetupRoutingModule_Factory(t) { return new (t || MeetupRoutingModule)(); };
-MeetupRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: MeetupRoutingModule });
-MeetupRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule.forChild(routes), _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](MeetupRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule] }); })();
-
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](MeetupRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule]
+  });
+})();
 
 /***/ }),
 
@@ -289,18 +280,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 const _c0 = function (a0, a2) {
   return [a0, "banner", a2];
 };
-
 function MeetupComponent_li_4_li_4_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li")(1, "a", 2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
-
   if (rf & 2) {
     const i_r4 = ctx.index;
     const event_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
@@ -310,7 +298,6 @@ function MeetupComponent_li_4_li_4_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Talk ", i_r4 + 1, "");
   }
 }
-
 function MeetupComponent_li_4_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li")(1, "strong");
@@ -320,7 +307,6 @@ function MeetupComponent_li_4_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, MeetupComponent_li_4_li_4_Template, 3, 5, "li", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
-
   if (rf & 2) {
     const event_r1 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
@@ -329,47 +315,41 @@ function MeetupComponent_li_4_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", event_r1.talks);
   }
 }
-
 class MeetupComponent {
   constructor(meetupService) {
     this.meetupService = meetupService;
   }
-
   ngOnInit() {
     this.events$ = this.meetupService.getEvents();
   }
-
+  static #_ = this.ɵfac = function MeetupComponent_Factory(t) {
+    return new (t || MeetupComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_meetup_service__WEBPACK_IMPORTED_MODULE_0__.MeetupService));
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+    type: MeetupComponent,
+    selectors: [["app-meetup"]],
+    decls: 6,
+    vars: 3,
+    consts: [[1, "container"], [4, "ngFor", "ngForOf"], [3, "routerLink"]],
+    template: function MeetupComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Meetups AngularSP");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ul");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, MeetupComponent_li_4_Template, 5, 3, "li", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](5, "async");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      }
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](5, 1, ctx.events$));
+      }
+    },
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgForOf, _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterLink, _angular_common__WEBPACK_IMPORTED_MODULE_2__.AsyncPipe],
+    styles: [".container[_ngcontent-%COMP%] {\n  margin: 0 auto;\n  width: 700px;\n}\n\n.container[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  line-height: 3em;\n}\n\n.container[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  margin-bottom: 32px;\n}\n\n.container[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style-type: none;\n}\n\n.container[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.container[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  padding-right: 20px;\n}\n/*# sourceURL=webpack://./src/app/meetup/meetup.component.css */\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbWVldHVwL21lZXR1cC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYztFQUNkLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQiIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICBtYXJnaW46IDAgYXV0bztcbiAgd2lkdGg6IDcwMHB4O1xufVxuXG4uY29udGFpbmVyIGgxIHtcbiAgbGluZS1oZWlnaHQ6IDNlbTtcbn1cblxuLmNvbnRhaW5lciB1bCB7XG4gIG1hcmdpbi1ib3R0b206IDMycHg7XG59XG5cbi5jb250YWluZXIgbGkge1xuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG59XG5cbi5jb250YWluZXIgdWwgbGkgdWwge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4uY29udGFpbmVyIHVsIGxpIHVsIGxpIHtcbiAgcGFkZGluZy1yaWdodDogMjBweDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
+  });
 }
-
-MeetupComponent.ɵfac = function MeetupComponent_Factory(t) {
-  return new (t || MeetupComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_meetup_service__WEBPACK_IMPORTED_MODULE_0__.MeetupService));
-};
-
-MeetupComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
-  type: MeetupComponent,
-  selectors: [["app-meetup"]],
-  decls: 6,
-  vars: 3,
-  consts: [[1, "container"], [4, "ngFor", "ngForOf"], [3, "routerLink"]],
-  template: function MeetupComponent_Template(rf, ctx) {
-    if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Meetups AngularSP");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ul");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, MeetupComponent_li_4_Template, 5, 3, "li", 1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](5, "async");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    }
-
-    if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](5, 1, ctx.events$));
-    }
-  },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgForOf, _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterLinkWithHref, _angular_common__WEBPACK_IMPORTED_MODULE_2__.AsyncPipe],
-  styles: [".container[_ngcontent-%COMP%] {\n  margin: 0 auto;\n  width: 700px;\n}\n\n.container[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  line-height: 3em;\n}\n\n.container[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  margin-bottom: 32px;\n}\n\n.container[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style-type: none;\n}\n\n.container[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.container[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  padding-right: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lZXR1cC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYztFQUNkLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQiIsImZpbGUiOiJtZWV0dXAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICBtYXJnaW46IDAgYXV0bztcbiAgd2lkdGg6IDcwMHB4O1xufVxuXG4uY29udGFpbmVyIGgxIHtcbiAgbGluZS1oZWlnaHQ6IDNlbTtcbn1cblxuLmNvbnRhaW5lciB1bCB7XG4gIG1hcmdpbi1ib3R0b206IDMycHg7XG59XG5cbi5jb250YWluZXIgbGkge1xuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG59XG5cbi5jb250YWluZXIgdWwgbGkgdWwge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4uY29udGFpbmVyIHVsIGxpIHVsIGxpIHtcbiAgcGFkZGluZy1yaWdodDogMjBweDtcbn1cbiJdfQ== */"]
-});
 
 /***/ }),
 
@@ -394,15 +374,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class MeetupModule {
+  static #_ = this.ɵfac = function MeetupModule_Factory(t) {
+    return new (t || MeetupModule)();
+  };
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({
+    type: MeetupModule
+  });
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _meetup_routing_module__WEBPACK_IMPORTED_MODULE_1__.MeetupRoutingModule]
+  });
 }
-MeetupModule.ɵfac = function MeetupModule_Factory(t) { return new (t || MeetupModule)(); };
-MeetupModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: MeetupModule });
-MeetupModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule,
-        _meetup_routing_module__WEBPACK_IMPORTED_MODULE_1__.MeetupRoutingModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](MeetupModule, { declarations: [_meetup_component__WEBPACK_IMPORTED_MODULE_2__.MeetupComponent,
-        _banner_banner_component__WEBPACK_IMPORTED_MODULE_0__.BannerComponent], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule,
-        _meetup_routing_module__WEBPACK_IMPORTED_MODULE_1__.MeetupRoutingModule] }); })();
-
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](MeetupModule, {
+    declarations: [_meetup_component__WEBPACK_IMPORTED_MODULE_2__.MeetupComponent, _banner_banner_component__WEBPACK_IMPORTED_MODULE_0__.BannerComponent],
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _meetup_routing_module__WEBPACK_IMPORTED_MODULE_1__.MeetupRoutingModule]
+  });
+})();
 
 /***/ }),
 
@@ -421,16 +408,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class MeetupService {
-    constructor(http) {
-        this.http = http;
-    }
-    getEvents() {
-        return this.http.get('assets/events.json');
-    }
+  constructor(http) {
+    this.http = http;
+  }
+  getEvents() {
+    return this.http.get('assets/events.json');
+  }
+  static #_ = this.ɵfac = function MeetupService_Factory(t) {
+    return new (t || MeetupService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient));
+  };
+  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+    token: MeetupService,
+    factory: MeetupService.ɵfac,
+    providedIn: 'root'
+  });
 }
-MeetupService.ɵfac = function MeetupService_Factory(t) { return new (t || MeetupService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient)); };
-MeetupService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: MeetupService, factory: MeetupService.ɵfac, providedIn: 'root' });
-
 
 /***/ }),
 
@@ -444,20 +436,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "slugfy": () => (/* binding */ slugfy)
 /* harmony export */ });
-const slugfy = (str) => {
-    str = str.replace(/^\s+|\s+$/g, '');
-    str = str.toLowerCase();
-    let from = 'àáäâèéëêìíïîòóöôùúüûñç·/_,:;';
-    let to = 'aaaaeeeeiiiioooouuuunc------';
-    for (let i = 0, l = from.length; i < l; i++) {
-        str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-    }
-    str = str.replace(/[^a-z0-9 -]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-');
-    return str;
+const slugfy = str => {
+  str = str.replace(/^\s+|\s+$/g, '');
+  str = str.toLowerCase();
+  let from = 'àáäâèéëêìíïîòóöôùúüûñç·/_,:;';
+  let to = 'aaaaeeeeiiiioooouuuunc------';
+  for (let i = 0, l = from.length; i < l; i++) {
+    str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+  }
+  str = str.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
+  return str;
 };
-
 
 /***/ }),
 
@@ -475,27 +464,21 @@ function applyStyleWithOptions(node, options) {
   const {
     style
   } = node;
-
   if (options.backgroundColor) {
     style.backgroundColor = options.backgroundColor;
   }
-
   if (options.width) {
     style.width = `${options.width}px`;
   }
-
   if (options.height) {
     style.height = `${options.height}px`;
   }
-
   const manual = options.style;
-
   if (manual != null) {
     Object.keys(manual).forEach(key => {
       style[key] = manual[key];
     });
   }
-
   return node;
 }
 
@@ -520,7 +503,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
       resolve(value);
     });
   }
-
   return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
@@ -529,7 +511,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function rejected(value) {
       try {
         step(generator["throw"](value));
@@ -537,64 +518,50 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function step(result) {
       result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
     }
-
     step((generator = generator.apply(thisArg, _arguments || [])).next());
   });
 };
 
 
 
-
-
 function cloneCanvasElement(node) {
   return __awaiter(this, void 0, void 0, function* () {
     const dataURL = node.toDataURL();
-
     if (dataURL === 'data:,') {
       return Promise.resolve(node.cloneNode(false));
     }
-
     return (0,_util__WEBPACK_IMPORTED_MODULE_2__.createImage)(dataURL);
   });
 }
-
 function cloneVideoElement(node, options) {
   return __awaiter(this, void 0, void 0, function* () {
     return Promise.resolve(node.poster).then(url => (0,_getBlobFromURL__WEBPACK_IMPORTED_MODULE_0__.getBlobFromURL)(url, options)).then(data => (0,_util__WEBPACK_IMPORTED_MODULE_2__.makeDataUrl)(data.blob, (0,_util__WEBPACK_IMPORTED_MODULE_2__.getMimeType)(node.poster) || data.contentType)).then(dataURL => (0,_util__WEBPACK_IMPORTED_MODULE_2__.createImage)(dataURL));
   });
 }
-
 function cloneSingleNode(node, options) {
   return __awaiter(this, void 0, void 0, function* () {
     if (node instanceof HTMLCanvasElement) {
       return cloneCanvasElement(node);
     }
-
     if (node instanceof HTMLVideoElement && node.poster) {
       return cloneVideoElement(node, options);
     }
-
     return Promise.resolve(node.cloneNode(false));
   });
 }
-
 const isSlotElement = node => node.tagName != null && node.tagName.toUpperCase() === 'SLOT';
-
 function cloneChildren(nativeNode, clonedNode, options) {
   var _a;
-
   return __awaiter(this, void 0, void 0, function* () {
     const children = isSlotElement(nativeNode) && nativeNode.assignedNodes ? (0,_util__WEBPACK_IMPORTED_MODULE_2__.toArray)(nativeNode.assignedNodes()) : (0,_util__WEBPACK_IMPORTED_MODULE_2__.toArray)(((_a = nativeNode.shadowRoot) !== null && _a !== void 0 ? _a : nativeNode).childNodes);
-
     if (children.length === 0 || nativeNode instanceof HTMLVideoElement) {
       return Promise.resolve(clonedNode);
     }
-
-    return children.reduce((deferred, child) => deferred // eslint-disable-next-line no-use-before-define
+    return children.reduce((deferred, child) => deferred
+    // eslint-disable-next-line no-use-before-define
     .then(() => cloneNode(child, options)).then(clonedChild => {
       // eslint-disable-next-line promise/always-return
       if (clonedChild) {
@@ -603,15 +570,12 @@ function cloneChildren(nativeNode, clonedNode, options) {
     }), Promise.resolve()).then(() => clonedNode);
   });
 }
-
 function cloneCSSStyle(nativeNode, clonedNode) {
   const source = window.getComputedStyle(nativeNode);
   const target = clonedNode.style;
-
   if (!target) {
     return;
   }
-
   if (source.cssText) {
     target.cssText = source.cssText;
   } else {
@@ -620,33 +584,27 @@ function cloneCSSStyle(nativeNode, clonedNode) {
     });
   }
 }
-
 function cloneInputValue(nativeNode, clonedNode) {
   if (nativeNode instanceof HTMLTextAreaElement) {
     clonedNode.innerHTML = nativeNode.value;
   }
-
   if (nativeNode instanceof HTMLInputElement) {
     clonedNode.setAttribute('value', nativeNode.value);
   }
 }
-
 function decorate(nativeNode, clonedNode) {
   return __awaiter(this, void 0, void 0, function* () {
     if (!(clonedNode instanceof Element)) {
       return Promise.resolve(clonedNode);
     }
-
     return Promise.resolve().then(() => cloneCSSStyle(nativeNode, clonedNode)).then(() => (0,_clonePseudoElements__WEBPACK_IMPORTED_MODULE_1__.clonePseudoElements)(nativeNode, clonedNode)).then(() => cloneInputValue(nativeNode, clonedNode)).then(() => clonedNode);
   });
 }
-
 function cloneNode(node, options, isRoot) {
   return __awaiter(this, void 0, void 0, function* () {
     if (!isRoot && options.filter && !options.filter(node)) {
       return Promise.resolve(null);
     }
-
     return Promise.resolve(node).then(clonedNode => cloneSingleNode(clonedNode, options)).then(clonedNode => cloneChildren(node, clonedNode, options)).then(clonedNode => decorate(node, clonedNode));
   });
 }
@@ -665,12 +623,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util */ 7199);
 
-
 function formatCSSText(style) {
   const content = style.getPropertyValue('content');
   return `${style.cssText} content: '${content.replace(/'|"/g, '')}';`;
 }
-
 function formatCSSProperties(style) {
   return (0,_util__WEBPACK_IMPORTED_MODULE_0__.toArray)(style).map(name => {
     const value = style.getPropertyValue(name);
@@ -678,34 +634,27 @@ function formatCSSProperties(style) {
     return `${name}: ${value}${priority ? ' !important' : ''};`;
   }).join(' ');
 }
-
 function getPseudoElementStyle(className, pseudo, style) {
   const selector = `.${className}:${pseudo}`;
   const cssText = style.cssText ? formatCSSText(style) : formatCSSProperties(style);
   return document.createTextNode(`${selector}{${cssText}}`);
 }
-
 function clonePseudoElement(nativeNode, clonedNode, pseudo) {
   const style = window.getComputedStyle(nativeNode, pseudo);
   const content = style.getPropertyValue('content');
-
   if (content === '' || content === 'none') {
     return;
   }
-
   const className = (0,_util__WEBPACK_IMPORTED_MODULE_0__.uuid)();
-
   try {
     clonedNode.className = `${clonedNode.className} ${className}`;
   } catch (err) {
     return;
   }
-
   const styleElement = document.createElement('style');
   styleElement.appendChild(getPseudoElementStyle(className, pseudo, style));
   clonedNode.appendChild(styleElement);
 }
-
 function clonePseudoElements(nativeNode, clonedNode) {
   clonePseudoElement(nativeNode, clonedNode, ':before');
   clonePseudoElement(nativeNode, clonedNode, ':after');
@@ -732,7 +681,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
       resolve(value);
     });
   }
-
   return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
@@ -741,7 +689,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function rejected(value) {
       try {
         step(generator["throw"](value));
@@ -749,47 +696,37 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function step(result) {
       result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
     }
-
     step((generator = generator.apply(thisArg, _arguments || [])).next());
   });
 };
 
 
 
-
-
 function embedBackground(clonedNode, options) {
   var _a;
-
   return __awaiter(this, void 0, void 0, function* () {
     const background = (_a = clonedNode.style) === null || _a === void 0 ? void 0 : _a.getPropertyValue('background');
-
     if (!background) {
       return Promise.resolve(clonedNode);
     }
-
     return Promise.resolve(background).then(cssString => (0,_embedResources__WEBPACK_IMPORTED_MODULE_1__.embedResources)(cssString, null, options)).then(cssString => {
       clonedNode.style.setProperty('background', cssString, clonedNode.style.getPropertyPriority('background'));
       return clonedNode;
     });
   });
 }
-
 function embedImageNode(clonedNode, options) {
   return __awaiter(this, void 0, void 0, function* () {
     if (!(clonedNode instanceof HTMLImageElement && !(0,_util__WEBPACK_IMPORTED_MODULE_2__.isDataUrl)(clonedNode.src)) && !(clonedNode instanceof SVGImageElement && !(0,_util__WEBPACK_IMPORTED_MODULE_2__.isDataUrl)(clonedNode.href.baseVal))) {
       return Promise.resolve(clonedNode);
     }
-
     const src = clonedNode instanceof HTMLImageElement ? clonedNode.src : clonedNode.href.baseVal;
     return Promise.resolve(src).then(url => (0,_getBlobFromURL__WEBPACK_IMPORTED_MODULE_0__.getBlobFromURL)(url, options)).then(data => (0,_util__WEBPACK_IMPORTED_MODULE_2__.makeDataUrl)(data.blob, (0,_util__WEBPACK_IMPORTED_MODULE_2__.getMimeType)(src) || data.contentType)).then(dataURL => new Promise((resolve, reject) => {
       clonedNode.onload = resolve;
       clonedNode.onerror = reject;
-
       if (clonedNode instanceof HTMLImageElement) {
         clonedNode.srcset = '';
         clonedNode.src = dataURL;
@@ -799,22 +736,19 @@ function embedImageNode(clonedNode, options) {
     })).then(() => clonedNode, () => clonedNode);
   });
 }
-
 function embedChildren(clonedNode, options) {
   return __awaiter(this, void 0, void 0, function* () {
-    const children = (0,_util__WEBPACK_IMPORTED_MODULE_2__.toArray)(clonedNode.childNodes); // eslint-disable-next-line no-use-before-define
-
+    const children = (0,_util__WEBPACK_IMPORTED_MODULE_2__.toArray)(clonedNode.childNodes);
+    // eslint-disable-next-line no-use-before-define
     const deferreds = children.map(child => embedImages(child, options));
     return Promise.all(deferreds).then(() => clonedNode);
   });
 }
-
 function embedImages(clonedNode, options) {
   return __awaiter(this, void 0, void 0, function* () {
     if (!(clonedNode instanceof Element)) {
       return Promise.resolve(clonedNode);
     }
-
     return Promise.resolve(clonedNode).then(node => embedBackground(node, options)).then(node => embedImageNode(node, options)).then(node => embedChildren(node, options));
   });
 }
@@ -843,7 +777,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
       resolve(value);
     });
   }
-
   return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
@@ -852,7 +785,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function rejected(value) {
       try {
         step(generator["throw"](value));
@@ -860,15 +792,12 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function step(result) {
       result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
     }
-
     step((generator = generator.apply(thisArg, _arguments || [])).next());
   });
 };
-
 
 
 const URL_REGEX = /url\((['"]?)([^'"]+?)\1\)/g;
@@ -893,11 +822,9 @@ function embed(cssText, resourceURL, baseURL, options, get) {
     if (typeof data === 'string') {
       return (0,_util__WEBPACK_IMPORTED_MODULE_1__.makeDataUrl)(data, (0,_util__WEBPACK_IMPORTED_MODULE_1__.getMimeType)(resourceURL));
     }
-
     return (0,_util__WEBPACK_IMPORTED_MODULE_1__.makeDataUrl)(data.blob, (0,_util__WEBPACK_IMPORTED_MODULE_1__.getMimeType)(resourceURL) || data.contentType);
   }).then(dataURL => cssText.replace(toRegex(resourceURL), `$1${dataURL}$3`)).then(content => content, () => resolvedURL);
 }
-
 function filterPreferredFontFormat(str, {
   preferredFontFormat
 }) {
@@ -905,18 +832,15 @@ function filterPreferredFontFormat(str, {
     // eslint-disable-next-line no-constant-condition
     while (true) {
       const [src,, format] = URL_WITH_FORMAT_REGEX.exec(match) || [];
-
       if (!format) {
         return '';
       }
-
       if (format === preferredFontFormat) {
         return `src: ${src};`;
       }
     }
   });
 }
-
 function shouldEmbed(url) {
   return url.search(URL_REGEX) !== -1;
 }
@@ -925,9 +849,9 @@ function embedResources(cssText, baseUrl, options) {
     if (!shouldEmbed(cssText)) {
       return Promise.resolve(cssText);
     }
-
     const filteredCSSText = filterPreferredFontFormat(cssText, options);
-    return Promise.resolve(filteredCSSText).then(parseURLs).then(urls => urls.reduce((deferred, url) => // eslint-disable-next-line promise/no-nesting
+    return Promise.resolve(filteredCSSText).then(parseURLs).then(urls => urls.reduce((deferred, url) =>
+    // eslint-disable-next-line promise/no-nesting
     deferred.then(css => embed(css, url, baseUrl, options)), Promise.resolve(filteredCSSText)));
   });
 }
@@ -953,7 +877,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
       resolve(value);
     });
   }
-
   return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
@@ -962,7 +885,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function rejected(value) {
       try {
         step(generator["throw"](value));
@@ -970,26 +892,20 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function step(result) {
       result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
     }
-
     step((generator = generator.apply(thisArg, _arguments || [])).next());
   });
 };
 
 
-
 const cssFetchCache = {};
-
 function fetchCSS(url) {
   const cache = cssFetchCache[url];
-
   if (cache != null) {
     return cache;
   }
-
   const deferred = window.fetch(url).then(res => ({
     url,
     cssText: res.text()
@@ -997,7 +913,6 @@ function fetchCSS(url) {
   cssFetchCache[url] = deferred;
   return deferred;
 }
-
 function embedFonts(meta) {
   return __awaiter(this, void 0, void 0, function* () {
     return meta.cssText.then(raw => {
@@ -1006,65 +921,54 @@ function embedFonts(meta) {
       const fontLocs = cssText.match(/url\([^)]+\)/g) || [];
       const loadFonts = fontLocs.map(location => {
         let url = location.replace(regexUrl, '$1');
-
         if (!url.startsWith('https://')) {
           url = new URL(url, meta.url).href;
-        } // eslint-disable-next-line promise/no-nesting
-
-
+        }
+        // eslint-disable-next-line promise/no-nesting
         return window.fetch(url).then(res => res.blob()).then(blob => new Promise((resolve, reject) => {
           const reader = new FileReader();
-
           reader.onloadend = () => {
             // Side Effect
             cssText = cssText.replace(location, `url(${reader.result})`);
             resolve([location, reader.result]);
           };
-
           reader.onerror = reject;
           reader.readAsDataURL(blob);
         }));
-      }); // eslint-disable-next-line promise/no-nesting
-
+      });
+      // eslint-disable-next-line promise/no-nesting
       return Promise.all(loadFonts).then(() => cssText);
     });
   });
 }
-
 function parseCSS(source) {
   if (source == null) {
     return [];
   }
-
   const result = [];
-  const commentsRegex = /(\/\*[\s\S]*?\*\/)/gi; // strip out comments
-
+  const commentsRegex = /(\/\*[\s\S]*?\*\/)/gi;
+  // strip out comments
   let cssText = source.replace(commentsRegex, '');
-  const keyframesRegex = new RegExp('((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})', 'gi'); // eslint-disable-next-line no-constant-condition
-
+  const keyframesRegex = new RegExp('((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})', 'gi');
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     const matches = keyframesRegex.exec(cssText);
-
     if (matches === null) {
       break;
     }
-
     result.push(matches[0]);
   }
-
   cssText = cssText.replace(keyframesRegex, '');
-  const importRegex = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi; // to match css & media queries together
-
-  const combinedCSSRegex = '((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]' + '*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})'; // unified regex
-
-  const unifiedRegex = new RegExp(combinedCSSRegex, 'gi'); // eslint-disable-next-line no-constant-condition
-
+  const importRegex = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;
+  // to match css & media queries together
+  const combinedCSSRegex = '((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]' + '*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})';
+  // unified regex
+  const unifiedRegex = new RegExp(combinedCSSRegex, 'gi');
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     let matches = importRegex.exec(cssText);
-
     if (matches === null) {
       matches = unifiedRegex.exec(cssText);
-
       if (matches === null) {
         break;
       } else {
@@ -1073,18 +977,15 @@ function parseCSS(source) {
     } else {
       unifiedRegex.lastIndex = importRegex.lastIndex;
     }
-
     result.push(matches[0]);
   }
-
   return result;
 }
-
 function getCSSRules(styleSheets) {
   return __awaiter(this, void 0, void 0, function* () {
     const ret = [];
-    const deferreds = []; // First loop inlines imports
-
+    const deferreds = [];
+    // First loop inlines imports
     styleSheets.forEach(sheet => {
       if ('cssRules' in sheet) {
         try {
@@ -1109,7 +1010,6 @@ function getCSSRules(styleSheets) {
           });
         } catch (e) {
           const inline = styleSheets.find(a => a.href == null) || document.styleSheets[0];
-
           if (sheet.href != null) {
             deferreds.push(fetchCSS(sheet.href).then(metadata => metadata ? embedFonts(metadata) : '').then(cssText => parseCSS(cssText).forEach(rule => {
               inline.insertRule(rule, sheet.cssRules.length);
@@ -1117,7 +1017,6 @@ function getCSSRules(styleSheets) {
               console.error('Error loading remote stylesheet', err.toString());
             }));
           }
-
           console.error('Error inlining remote css file', e.toString());
         }
       }
@@ -1139,23 +1038,19 @@ function getCSSRules(styleSheets) {
     });
   });
 }
-
 function getWebFontRules(cssRules) {
   return cssRules.filter(rule => rule.type === CSSRule.FONT_FACE_RULE).filter(rule => (0,_embedResources__WEBPACK_IMPORTED_MODULE_1__.shouldEmbed)(rule.style.getPropertyValue('src')));
 }
-
 function parseWebFontRules(node) {
   return __awaiter(this, void 0, void 0, function* () {
     return new Promise((resolve, reject) => {
       if (node.ownerDocument == null) {
         reject(new Error('Provided element is not within a Document'));
       }
-
       resolve((0,_util__WEBPACK_IMPORTED_MODULE_0__.toArray)(node.ownerDocument.styleSheets));
     }).then(styleSheets => getCSSRules(styleSheets)).then(getWebFontRules);
   });
 }
-
 function getWebFontCSS(node, options) {
   return __awaiter(this, void 0, void 0, function* () {
     return parseWebFontRules(node).then(rules => Promise.all(rules.map(rule => {
@@ -1170,13 +1065,11 @@ function embedWebFonts(clonedNode, options) {
       const styleNode = document.createElement('style');
       const sytleContent = document.createTextNode(cssText);
       styleNode.appendChild(sytleContent);
-
       if (clonedNode.firstChild) {
         clonedNode.insertBefore(styleNode, clonedNode.firstChild);
       } else {
         clonedNode.appendChild(styleNode);
       }
-
       return clonedNode;
     });
   });
@@ -1197,59 +1090,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util */ 7199);
 
 const cache = {};
-
 function getCacheKey(url) {
-  let key = url.replace(/\?.*/, ''); // font resourse
-
+  let key = url.replace(/\?.*/, '');
+  // font resourse
   if (/ttf|otf|eot|woff2?/i.test(key)) {
     key = key.replace(/.*\//, '');
   }
-
   return key;
 }
-
 function getBlobFromURL(url, options) {
   const cacheKey = getCacheKey(url);
-
   if (cache[cacheKey] != null) {
     return cache[cacheKey];
-  } // cache bypass so we dont have CORS issues with cached images
+  }
+  // cache bypass so we dont have CORS issues with cached images
   // ref: https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#Bypassing_the_cache
-
-
   if (options.cacheBust) {
     // eslint-disable-next-line no-param-reassign
     url += (/\?/.test(url) ? '&' : '?') + new Date().getTime();
   }
-
   const failed = reason => {
     let placeholder = '';
-
     if (options.imagePlaceholder) {
       const parts = options.imagePlaceholder.split(/,/);
-
       if (parts && parts[1]) {
         placeholder = parts[1];
       }
     }
-
     let msg = `Failed to fetch resource: ${url}`;
-
     if (reason) {
       msg = typeof reason === 'string' ? reason : reason.message;
     }
-
     if (msg) {
       console.error(msg);
     }
-
     return {
       blob: placeholder,
       contentType: ''
     };
   };
-
-  const deferred = window.fetch(url).then(res => // eslint-disable-next-line promise/no-nesting
+  const deferred = window.fetch(url).then(res =>
+  // eslint-disable-next-line promise/no-nesting
   res.blob().then(blob => ({
     blob,
     contentType: res.headers.get('Content-Type') || ''
@@ -1258,12 +1139,10 @@ function getBlobFromURL(url, options) {
     contentType
   }) => new Promise((resolve, reject) => {
     const reader = new FileReader();
-
     reader.onloadend = () => resolve({
       contentType,
       blob: reader.result
     });
-
     reader.onerror = reject;
     reader.readAsDataURL(blob);
   })).then(({
@@ -1272,9 +1151,10 @@ function getBlobFromURL(url, options) {
   }) => ({
     contentType,
     blob: (0,_util__WEBPACK_IMPORTED_MODULE_0__.parseDataUrlContent)(blob)
-  })) // on failed
-  .catch(failed); // cache result
-
+  }))
+  // on failed
+  .catch(failed);
+  // cache result
   cache[cacheKey] = deferred;
   return deferred;
 }
@@ -1308,7 +1188,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
       resolve(value);
     });
   }
-
   return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
@@ -1317,7 +1196,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function rejected(value) {
       try {
         step(generator["throw"](value));
@@ -1325,16 +1203,12 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function step(result) {
       result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
     }
-
     step((generator = generator.apply(thisArg, _arguments || [])).next());
   });
 };
-
-
 
 
 
@@ -1348,7 +1222,6 @@ function getImageSize(node, options = {}) {
     height
   };
 }
-
 function toSvg(node, options = {}) {
   return __awaiter(this, void 0, void 0, function* () {
     const {
@@ -1359,7 +1232,6 @@ function toSvg(node, options = {}) {
   });
 }
 const dimensionCanvasLimit = 16384; // as per https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#maximum_canvas_size
-
 function checkCanvasDimensions(canvas) {
   if (canvas.width > dimensionCanvasLimit || canvas.height > dimensionCanvasLimit) {
     if (canvas.width > dimensionCanvasLimit && canvas.height > dimensionCanvasLimit) {
@@ -1379,7 +1251,6 @@ function checkCanvasDimensions(canvas) {
     }
   }
 }
-
 function toCanvas(node, options = {}) {
   return __awaiter(this, void 0, void 0, function* () {
     return toSvg(node, options).then(_util__WEBPACK_IMPORTED_MODULE_4__.createImage).then(img => {
@@ -1394,19 +1265,15 @@ function toCanvas(node, options = {}) {
       const canvasHeight = options.canvasHeight || height;
       canvas.width = canvasWidth * ratio;
       canvas.height = canvasHeight * ratio;
-
       if (!options.skipAutoScale) {
         checkCanvasDimensions(canvas);
       }
-
       canvas.style.width = `${canvasWidth}`;
       canvas.style.height = `${canvasHeight}`;
-
       if (options.backgroundColor) {
         context.fillStyle = options.backgroundColor;
         context.fillRect(0, 0, canvas.width, canvas.height);
       }
-
       context.drawImage(img, 0, 0, canvas.width, canvas.height);
       return canvas;
     });
@@ -1478,7 +1345,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
       resolve(value);
     });
   }
-
   return new (P || (P = Promise))(function (resolve, reject) {
     function fulfilled(value) {
       try {
@@ -1487,7 +1353,6 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function rejected(value) {
       try {
         step(generator["throw"](value));
@@ -1495,15 +1360,12 @@ var __awaiter = undefined && undefined.__awaiter || function (thisArg, _argument
         reject(e);
       }
     }
-
     function step(result) {
       result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
     }
-
     step((generator = generator.apply(thisArg, _arguments || [])).next());
   });
 };
-
 const WOFF = 'application/font-woff';
 const JPEG = 'image/jpeg';
 const mimes = {
@@ -1530,28 +1392,23 @@ function resolveUrl(url, baseUrl) {
   // url is absolute already
   if (url.match(/^[a-z]+:\/\//i)) {
     return url;
-  } // url is absolute already, without protocol
-
-
+  }
+  // url is absolute already, without protocol
   if (url.match(/^\/\//)) {
     return window.location.protocol + url;
-  } // dataURI, mailto:, tel:, etc.
-
-
+  }
+  // dataURI, mailto:, tel:, etc.
   if (url.match(/^[a-z]+:/i)) {
     return url;
   }
-
   const doc = document.implementation.createHTMLDocument();
   const base = doc.createElement('base');
   const a = doc.createElement('a');
   doc.head.appendChild(base);
   doc.body.appendChild(a);
-
   if (baseUrl) {
     base.href = baseUrl;
   }
-
   a.href = url;
   return a.href;
 }
@@ -1567,11 +1424,11 @@ function parseDataUrlContent(dataURL) {
 const uuid = function uuid() {
   // generate uuid for className of pseudo elements.
   // We should not use GUIDs, otherwise pseudo elements sometimes cannot be captured.
-  let counter = 0; // ref: http://stackoverflow.com/a/6248722/2519373
-
-  const random = () => // eslint-disable-next-line no-bitwise
+  let counter = 0;
+  // ref: http://stackoverflow.com/a/6248722/2519373
+  const random = () =>
+  // eslint-disable-next-line no-bitwise
   `0000${(Math.random() * Math.pow(36, 4) << 0).toString(36)}`.slice(-4);
-
   return () => {
     counter += 1;
     return `u${random()}${counter}`;
@@ -1580,19 +1437,15 @@ const uuid = function uuid() {
 const delay = ms => args => new Promise(resolve => setTimeout(() => resolve(args), ms));
 function toArray(arrayLike) {
   const arr = [];
-
   for (let i = 0, l = arrayLike.length; i < l; i += 1) {
     arr.push(arrayLike[i]);
   }
-
   return arr;
 }
-
 function px(node, styleProperty) {
   const val = window.getComputedStyle(node).getPropertyValue(styleProperty);
   return parseFloat(val.replace('px', ''));
 }
-
 function getNodeWidth(node) {
   const leftBorder = px(node, 'border-left-width');
   const rightBorder = px(node, 'border-right-width');
@@ -1606,38 +1459,31 @@ function getNodeHeight(node) {
 function getPixelRatio() {
   let ratio;
   let FINAL_PROCESS;
-
   try {
     FINAL_PROCESS = process;
-  } catch (e) {// pass
+  } catch (e) {
+    // pass
   }
-
   const val = FINAL_PROCESS && FINAL_PROCESS.env ? FINAL_PROCESS.env.devicePixelRatio : null;
-
   if (val) {
     ratio = parseInt(val, 10);
-
     if (Number.isNaN(ratio)) {
       ratio = 1;
     }
   }
-
   return ratio || window.devicePixelRatio || 1;
 }
 function canvasToBlob(canvas) {
   if (canvas.toBlob) {
     return new Promise(resolve => canvas.toBlob(resolve));
   }
-
   return new Promise(resolve => {
     const binaryString = window.atob(canvas.toDataURL().split(',')[1]);
     const len = binaryString.length;
     const binaryArray = new Uint8Array(len);
-
     for (let i = 0; i < len; i += 1) {
       binaryArray[i] = binaryString.charCodeAt(i);
     }
-
     resolve(new Blob([binaryArray], {
       type: 'image/png'
     }));
@@ -1646,9 +1492,7 @@ function canvasToBlob(canvas) {
 function createImage(url) {
   return new Promise((resolve, reject) => {
     const img = new Image();
-
     img.onload = () => resolve(img);
-
     img.onerror = reject;
     img.crossOrigin = 'anonymous';
     img.decoding = 'sync';
