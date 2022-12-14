@@ -507,5 +507,28 @@
         "photo": "eduardo_speroni.jpg"
       }
     ]
+  },
+  {
+    "id": 56,
+    "title": "Evento online, no canal do Youtube",
+    "date": "15 de dezembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Performance e gestão de Estado em Aplicações Angular",
+        "speaker": "Lucas Sacramoni Peixoto Fernandes",
+        "description": "A Palestra tem como objetivo apresentar técnicas de performance em aplicações com Angular e também as vantagens de se utilizar a ferramenta NgRx para gestão de estado, com foco na performance.",
+        "photo": "lucas_peixoto.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Construindo bibliotecas Typescript em um workspace NX",
+        "speaker": "Mayara Cardoso",
+        "description": "O NX traz uma série de recursos que facilitam o desenvolvimento de softwares e um deles é a possiblidade de construir aplicações e bibliotecas Typescript, sem dependência de nenhum framework específico. Nesta palestra, você aprenderá a criar e configurar uma biblioteca Typescript num workspace NX, prepará-la para publicação e utilizá-la em diferentes projetos. Discutiremos um pouco também sobre a importância de soluções agnósticas em determinados contextos e como o NX pode nos auxiliar nesse processo.",
+        "photo": "mayaralopes.jpeg"
+      }
+    ]
   }
 ]
