@@ -530,5 +530,28 @@
         "photo": "mayaralopes.jpeg"
       }
     ]
+  },
+   {
+    "id": 57,
+    "title": "Evento online, no canal do Youtube",
+    "date": "17 de janeiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "SOLID, uma história",
+        "speaker": "Alexandre Aquiles",
+        "description": "Será que um livro técnico pode contar uma história? Sim! Nessa palestra, Alexandre Aquiles contará sobre a transformação de um código ruim em um código mais fácil de entender e modificar. Cada um dos princípios (ou dicas) SOLID servirão como guia para uma (suposta) melhoria. Ou será que dá pra piorar?",
+        "photo": "alexandre_aquiles.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Composição de Formulários no Angular",
+        "speaker": "Andrew Rosário",
+        "description": "Desenvolver formulários complexos no frontend é um grande desafio. Precisamos lidar com muitos cenários como validações, lógicas de interação e reuso. Nesta talk apresentarei algumas técnicas para compor formulários utilizando o Angular Reactive Forms, garantindo assim mais flexibilidade e coesão para seu código.",
+        "photo": "andrew_rosario.jpg"
+      }
+    ]
   }
 ]
