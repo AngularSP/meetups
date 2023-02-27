@@ -553,5 +553,28 @@
         "photo": "andrew_rosario.jpg"
       }
     ]
-  }
+  },
+  {
+   "id": 58,
+   "title": "Evento online, no canal do Youtube",
+   "date": "28 de fevereiro",
+   "primaryColor": "darkOrange",
+   "secondaryColor": "gold",
+   "talks": [
+     {
+       "subtitle": "TALK #1",
+       "title": "O poder das Diretivas no Angular - Usando diretivas nativas e criando diretivas personalizadas",
+       "speaker": "João Vitor Miranda",
+       "description": "O Angular possui várias diretivas que facilitam muito o desenvolvimento ágil e a manutenção do nosso código. Nessa palestra, vou falar sobre as diretivas nativas do Angular mais importantes e úteis e também vou ensinar como podemos criar diretivas customizadas que atendem necessidades específicas da nossa aplicação.",
+       "photo": "joao_vitor_miranda.png"
+     },
+     {
+       "subtitle": "TALK #2",
+       "title": "Power Skills para Devs",
+       "speaker": "Paolo Almeida",
+       "description": "Caiçara. 32 anos. Trabalha com Produtos Digitais a mais de 10 anos. Atua como Engenheiro de Software no Itaú. Entusiasta em Open Source. Fã de Carreta Furacão. Finge que dança e surfa nas horas vagas.",
+       "photo": "paolo_almeida.jpeg"
+     }
+   ]
+ }
 ]
