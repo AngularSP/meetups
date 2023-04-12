@@ -557,7 +557,7 @@
   {
    "id": 58,
    "title": "Evento online, no canal do Youtube",
-   "date": "28 de fevereiro",
+   "date": "06 de março",
    "primaryColor": "darkOrange",
    "secondaryColor": "gold",
    "talks": [
@@ -570,11 +570,34 @@
      },
      {
        "subtitle": "TALK #2",
-       "title": "Power Skills para Devs",
+       "title": "Mercado de trabalho, demissão em massa e Layoffs: Saiba como Acelerar sua Recolocação no Mercado de Tecnologia",
        "speaker": "Paolo Almeida",
-       "description": "Caiçara. 32 anos. Trabalha com Produtos Digitais a mais de 10 anos. Atua como Engenheiro de Software no Itaú. Entusiasta em Open Source. Fã de Carreta Furacão. Finge que dança e surfa nas horas vagas.",
+       "description": "O mercado de trabalho está em constantes mudanças, estamos vendo ondas de demissão em massa, layoffs e muitas pessoas impactadas. Nesta talk, eu trago um passo a passo pra ajudar você a acelerar sua recolocação no mercado de tecnologia, com tarefas práticas pra já aplicar e testar!",
        "photo": "paolo_almeida.jpeg"
      }
    ]
- }
+ },
+ {
+  "id": 59,
+  "title": "Evento online, no canal do Youtube",
+  "date": "13 de abril",
+  "primaryColor": "darkOrange",
+  "secondaryColor": "gold",
+  "talks": [
+    {
+      "subtitle": "TALK #1",
+      "title": "Processamento de streamings com NodeJS",
+      "speaker": "Fabio Molliet",
+      "description": "Como podemos desenvolver aplicação de alta performance para processar, manipular, converter dados utilizando streaming em NodeJS.",
+      "photo": "fabio_molliet.jpg"
+    },
+    {
+      "subtitle": "TALK #2",
+      "title": "Arquitetura REST para front-ends",
+      "speaker": "Eron Alves da Silva",
+      "description": "O que de fato é a arquitetura REST? De fato, por vezes podemos nos deparar com serviços que seguem contratos estranhos, e ficamos em dúvidas se aquilo está correto mesmo. O objetivo desta talk é desmistificar a modelagem desses serviços e apresentar as principais convenções em torno disso.",
+      "photo": "eron.jpg"
+    }
+  ]
+}
 ]
