@@ -531,7 +531,7 @@
       }
     ]
   },
-   {
+  {
     "id": 57,
     "title": "Evento online, no canal do Youtube",
     "date": "17 de janeiro",
@@ -555,49 +555,72 @@
     ]
   },
   {
-   "id": 58,
-   "title": "Evento online, no canal do Youtube",
-   "date": "06 de março",
-   "primaryColor": "darkOrange",
-   "secondaryColor": "gold",
-   "talks": [
-     {
-       "subtitle": "TALK #1",
-       "title": "O poder das Diretivas no Angular - Usando diretivas nativas e criando diretivas personalizadas",
-       "speaker": "João Vitor Miranda",
-       "description": "O Angular possui várias diretivas que facilitam muito o desenvolvimento ágil e a manutenção do nosso código. Nessa palestra, vou falar sobre as diretivas nativas do Angular mais importantes e úteis e também vou ensinar como podemos criar diretivas customizadas que atendem necessidades específicas da nossa aplicação.",
-       "photo": "joao_vitor_miranda.png"
-     },
-     {
-       "subtitle": "TALK #2",
-       "title": "Mercado de trabalho, demissão em massa e Layoffs: Saiba como Acelerar sua Recolocação no Mercado de Tecnologia",
-       "speaker": "Paolo Almeida",
-       "description": "O mercado de trabalho está em constantes mudanças, estamos vendo ondas de demissão em massa, layoffs e muitas pessoas impactadas. Nesta talk, eu trago um passo a passo pra ajudar você a acelerar sua recolocação no mercado de tecnologia, com tarefas práticas pra já aplicar e testar!",
-       "photo": "paolo_almeida.jpeg"
-     }
-   ]
- },
- {
-  "id": 59,
-  "title": "Evento online, no canal do Youtube",
-  "date": "13 de abril",
-  "primaryColor": "darkOrange",
-  "secondaryColor": "gold",
-  "talks": [
-    {
-      "subtitle": "TALK #1",
-      "title": "Processamento de streamings com NodeJS",
-      "speaker": "Fabio Molliet",
-      "description": "Como podemos desenvolver aplicação de alta performance para processar, manipular, converter dados utilizando streaming em NodeJS.",
-      "photo": "fabio_molliet.jpg"
-    },
-    {
-      "subtitle": "TALK #2",
-      "title": "Arquitetura REST para front-ends",
-      "speaker": "Eron Alves da Silva",
-      "description": "O que de fato é a arquitetura REST? De fato, por vezes podemos nos deparar com serviços que seguem contratos estranhos, e ficamos em dúvidas se aquilo está correto mesmo. O objetivo desta talk é desmistificar a modelagem desses serviços e apresentar as principais convenções em torno disso.",
-      "photo": "eron.jpg"
-    }
-  ]
-}
+    "id": 58,
+    "title": "Evento online, no canal do Youtube",
+    "date": "06 de março",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "O poder das Diretivas no Angular - Usando diretivas nativas e criando diretivas personalizadas",
+        "speaker": "João Vitor Miranda",
+        "description": "O Angular possui várias diretivas que facilitam muito o desenvolvimento ágil e a manutenção do nosso código. Nessa palestra, vou falar sobre as diretivas nativas do Angular mais importantes e úteis e também vou ensinar como podemos criar diretivas customizadas que atendem necessidades específicas da nossa aplicação.",
+        "photo": "joao_vitor_miranda.png"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Mercado de trabalho, demissão em massa e Layoffs: Saiba como Acelerar sua Recolocação no Mercado de Tecnologia",
+        "speaker": "Paolo Almeida",
+        "description": "O mercado de trabalho está em constantes mudanças, estamos vendo ondas de demissão em massa, layoffs e muitas pessoas impactadas. Nesta talk, eu trago um passo a passo pra ajudar você a acelerar sua recolocação no mercado de tecnologia, com tarefas práticas pra já aplicar e testar!",
+        "photo": "paolo_almeida.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Evento online, no canal do Youtube",
+    "date": "13 de abril",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Processamento de streamings com NodeJS",
+        "speaker": "Fabio Molliet",
+        "description": "Como podemos desenvolver aplicação de alta performance para processar, manipular, converter dados utilizando streaming em NodeJS.",
+        "photo": "fabio_molliet.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Arquitetura REST para front-ends",
+        "speaker": "Eron Alves da Silva",
+        "description": "O que de fato é a arquitetura REST? De fato, por vezes podemos nos deparar com serviços que seguem contratos estranhos, e ficamos em dúvidas se aquilo está correto mesmo. O objetivo desta talk é desmistificar a modelagem desses serviços e apresentar as principais convenções em torno disso.",
+        "photo": "eron.jpg"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Evento online, no canal do Youtube",
+    "date": "22 de junho",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Pre-Sales: Quanto vale o seu código?",
+        "speaker": "Alexandre Barrionuevo",
+        "description": "Alexandre é Arquiteto de Soluções no Banco Santander, com ampla experiência em tecnologia, negócios sustentáveis, liderança e formação de profissionais de TI.",
+        "photo": "alexandre_barrionuevo.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Carreira sem fronteiras : trabalhando para o exterior",
+        "speaker": "Francisco Cardoso",
+        "description": "Especialista DevOps focado em construir, gerenciar e otimizar plataformas cloud. Atuando em projetos desafiadores para uma empresa Irlandesa, com clientes e colegas de diversas partes do mundo, codando IaC, CI/CD pipelines, specs para clusters, habilitando e melhorando observabilidade.",
+        "photo": "fran_cardoso.jpg"
+      }
+    ]
+  }
 ]
