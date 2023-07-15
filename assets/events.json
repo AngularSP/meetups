@@ -622,5 +622,28 @@
         "photo": "fran_cardoso.jpg"
       }
     ]
+  },
+  {
+    "id": 62,
+    "title": "Evento online, no canal do Youtube",
+    "date": "25 de julho",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Introdução ao Flutter",
+        "speaker": "Jéssica Pereira",
+        "description": "Graduada em Análise e Desenvolvimento de Sistemas, desenvolvedora há 8 anos e se especializando em desenvolvimento mobile. Sou entusiasta do Flutter e acredito no seu poder de criar experiências incríveis e consistentes em diferentes plataformas. ",
+        "photo": "jessica_pereira.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Princípios SOLID para Arquitetura de Aplicações Web",
+        "speaker": "Guilherme Siquinelli ",
+        "description": "Arquiteto Front-end, Professor, Consultor, Palestrante, noob no desenvolvimento de Jogos 3D para web e curioso pelo universo.",
+        "photo": "guilherme_siquinelli.jpg"
+      }
+    ]
   }
 ]
