@@ -645,5 +645,28 @@
         "photo": "guilherme_siquinelli.jpg"
       }
     ]
+  },
+  {
+    "id": 63,
+    "title": "Evento online, no canal do Youtube",
+    "date": "6 de setembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Nx: escalando seu frontend com monorepo",
+        "speaker": "Andrew Rosário",
+        "description": "Escalar um ecossistema frontend moderno envolve governança, custos, processos, confiabilidade de entrega e performance em alto nível. Cada vez mais o tema de monorepositórios é tratado para alcançar estes objetivos. Nesta talk irei falar sobre o Nx, que é um grande destaque quando o assunto é gerenciamento de monorepos, principalmente se tratando deste universo complexo que é o frontend.",
+        "photo": "andrew_rosario.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Introdução ao Angular Signals",
+        "speaker": "Américo Neto",
+        "description": "Uma abordagem para facilitar a comunicação entre componentes em aplicações Angular. Serão explorados conceitos, benefícios e exemplos de como utilizar esse padrão para melhorar a interação entre partes distintas da aplicação.",
+        "photo": "americo.jpg"
+      }
+    ]
   }
 ]
