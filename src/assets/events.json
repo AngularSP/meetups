@@ -668,5 +668,28 @@
         "photo": "americo.jpg"
       }
     ]
+  },
+  {
+    "id": 65,
+    "title": "Evento online, no canal do Youtube",
+    "date": "13 de dezembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Construindo o Futuro do JavaScript e do Angular: Uma Exploração das Ferramentas de Build (Rollup, ESBuild, Webpack e Vite)",
+        "speaker": "Daniel Bertolini",
+        "description": "Descubra como cada uma dessas ferramentas aborda o processo de construção, otimização e empacotamento de código Angular, e como elas podem transformar sua experiência de desenvolvimento e entrega de aplicações Angular",
+        "photo": "daniel_bertolini.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Copilot World - Do GPT aos Copilots",
+        "speaker": "Pablo Lopes",
+        "description": "Copilot isso, Copilot aquilo. Mas como realmente chegamos aos Copilots? Nessa palestra Pablo Lopes vai explicar de antes do GPT até os momentos atuais os copilotos. Que agora, vivemos um período de mudanças fortes e como se adaptar a eles utilizando em trabalho.",
+        "photo": "pablo_lopes.jpeg"
+      }
+    ]
   }
 ]
