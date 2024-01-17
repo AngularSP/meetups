@@ -691,5 +691,28 @@
         "photo": "pablo_lopes.jpeg"
       }
     ]
+  },
+  {
+    "id": 67,
+    "title": "Evento online, no canal do Youtube",
+    "date": "23 de janeiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Deixe o jest trabalhar por você",
+        "speaker": "Waldir Neto",
+        "description": "o Jest é seu amigo e quer te ajudar! deixe ele facilitar sua vida e ganhe tempo fazendo seus testes.",
+        "photo": "waldir_neto.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Angular query: O futuro do gerenciamento de estado assíncrono",
+        "speaker": "Matheus Rian de Souza Silva",
+        "description": "TanStack Query, biblioteca versátil compatível com diversos frameworks, destaca-se por sua abordagem declarativa e automática no gerenciamento de estado assíncrono, lidando com cache, atualizações e dados obsoletos sem configurações adicionais.",
+        "photo": "matheus_rian.png"
+      }
+    ]
   }
 ]
