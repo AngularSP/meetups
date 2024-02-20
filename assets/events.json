@@ -714,5 +714,28 @@
         "photo": "matheus_rian.png"
       }
     ]
+  },
+  {
+    "id": 68,
+    "title": "Microsoft Reactor e Online",
+    "date": "27 de fevereiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Angular Signals: Reatividade Simples e Prática",
+        "speaker": "William Grasel",
+        "description": "Angular sempre foi um framework reativo, mas para muitos desenvolvedores o RxJS pode ser difícil de absorver e dominar, tornando uma solução demasiadamente complexa para problemas comuns do dia a dia. Signals vem para ser a nova primitiva reativa do framework, simples, prática e fácil, além de uma perfeita integração com RxJS que continua sendo importante para os casos reativos mais complexos! Vamos entender como os Signals funcionam, como eles se integram no ecossistema atual, o que você vai precisar aprender, e qual o futuro do framework com essa novidade!",
+        "photo": "william_grasel.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Angular Update: Guia Prático para Atualizações Sem Estresse",
+        "speaker": "Andrew Rosário",
+        "description": "Esta palestra oferece conselhos úteis e passos claros para atualizar sua aplicação Angular de versões mais antigas para as mais recentes, sem estresse. Vamos explorar ferramentas úteis, pontos de atenção e estratégias para garantir uma transição eficiente para as novas versões do Angular.",
+        "photo": "andrew_rosario.jpg"
+      }
+    ]
   }
 ]
