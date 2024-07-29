@@ -737,5 +737,28 @@
         "photo": "andrew_rosario.jpg"
       }
     ]
+  },
+  {
+    "id": 69,
+    "title": "Evento online, no canal do Youtube",
+    "date": "26 de março",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Conecta Brasil - O que o http3 pode nos ajudar.",
+        "speaker": "Douglas Guerra",
+        "description": "Introdução do HTTP3 e breve explicação de versões e como utilizá-lo ",
+        "photo": "douglas_guerra.jpg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Angular Moderno - O que tá acontecendo?",
+        "speaker": "Fabio Miranda",
+        "description": "Nessa talk irei falar do histórico de mudanças do Angular, qual caminho o framework está tomando e o que podemos esperar do futuro.",
+        "photo": "fabio_miranda.jpeg"
+      }
+    ]
   }
 ]
