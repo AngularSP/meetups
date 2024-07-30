@@ -760,5 +760,28 @@
         "photo": "fabio_miranda.jpeg"
       }
     ]
+  },
+  {
+    "id": 70,
+    "title": "Evento online, no canal do Youtube",
+    "date": "30 de julho",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Cypress - escrevendo testes e2e no Front End",
+        "speaker": "Natália Luiza",
+        "description": "",
+        "photo": "natalia_luiza.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Angular Moderno - O que tá acontecendo?",
+        "speaker": "Fabio Miranda",
+        "description": "Nessa talk irei falar do histórico de mudanças do Angular, qual caminho o framework está tomando e o que podemos esperar do futuro.",
+        "photo": "fabio_miranda.jpeg"
+      }
+    ]
   }
 ]
