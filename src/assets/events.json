@@ -783,5 +783,28 @@
         "photo": "fabio_miranda.jpeg"
       }
     ]
+  },
+  {
+    "id": 72,
+    "title": "AngularSP - Edição TOTVS",
+    "date": "27 de agosto",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Desenvolvimento ágil com PO UI e Angular 18",
+        "speaker": "Aline Lariguet e Carlos Simões",
+        "description": "Nesta palestra, desenvolveremos um CRUD (Create, Read, Update e Delete) utilizando o Angular 18 e PO UI, aproveitando templates prontos fornecidos por nossa biblioteca de componentes. Abordaremos como customizar o tema da aplicação por meio de serviços, além de customizar as propriedades dos componentes para atender às necessidades específicas do projeto.",
+        "photo": "Aline_Carlos.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Gerenciamento de Conexões Massivas e Pooling no PostgreSQL Cloud-Native",
+        "speaker": "Ronaldo Andrade Silva",
+        "description": "A palestra aborda como otimizar a gestão de milhares de conexões simultâneas ao PostgreSQL em ambientes cloud-native, focando em técnicas de pooling de conexões para melhorar a eficiência e o desempenho do banco de dados. Ferramentas como PgBouncer e PgPool-II são discutidas para reduzir a sobrecarga no servidor, além do uso do pgbench para testar diferentes configurações e garantir a melhor performance. A abordagem visa assegurar que o PostgreSQL opere de forma eficiente e escalável em ambientes de nuvem, mesmo sob cargas elevadas.",
+        "photo": "Ronaldo_Andrade.jpeg"
+      }
+    ]
   }
 ]
