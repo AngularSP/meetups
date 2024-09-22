@@ -806,5 +806,28 @@
         "photo": "Ronaldo_Andrade.jpeg"
       }
     ]
+  },
+  {
+    "id": 73,
+    "title": "AngularSP - Online",
+    "date": "25 de setembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Carreira Tech no Universo da Programação",
+        "speaker": "Damarys Africa",
+        "description": "Vamos falar sobre a trilha técnica do universo da programação discutindo os modelos tradicionais de progressão hierárquica e de estrutura de carreira, entender um pouco dos níveis de maturidade de desenvolvimento, e o que fazem os devs junior para além do sênior e saber como transitar no mercado de engenharia de software.",
+        "photo": "damarys_africa.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "O que Está Matando Seu Código Java?",
+        "speaker": "Leandro Marques",
+        "description": "Descubra os erros comuns que prejudicam a performance do seu código Java. Aprenda a evitar armadilhas que causam lentidão, alto consumo de memória e problemas de escalabilidade. Melhore suas habilidades de desenvolvimento Java com boas práticas que tornam suas aplicações mais rápidas, eficientes e prontas para crescer.",
+        "photo": "leandro_marques.jpeg"
+      }
+    ]
   }
 ]
