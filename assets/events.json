@@ -829,5 +829,28 @@
         "photo": "leandro_marques.jpeg"
       }
     ]
+  },
+  {
+    "id": 74,
+    "title": "AngularSP - Online",
+    "date": "07 de novembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Server Side rendering (SSR) no Angular",
+        "speaker": "Lucas Peixoto",
+        "description": "Angular 17 com SSR oferece vantagens como melhor performance, SEO e experiência do usuário, ao renderizar o conteúdo inicial via servidor. A apresentação explora o funcionamento do SSR e como aplicá-lo em projetos Angular para otimizar carregamento e visibilidade online.",
+        "photo": "lucas_peixoto.png"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Segurança por Design: Protegendo Sistemas desde a Primeira Linha de Código",
+        "speaker": "Renan Ferraro",
+        "description": "Em um mundo cada vez mais conectado e com crescentes ameaças cibernéticas, desenvolver software com segurança em mente desde o início é fundamental. Nesta palestra, vamos explorar os princípios de “Segurança por Design”, abordando como arquitetar e codificar sistemas robustos e protegidos contra vulnerabilidades comuns.",
+        "photo": "renan_ferraro.jpeg"
+      }
+    ]
   }
 ]
