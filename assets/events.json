@@ -852,5 +852,28 @@
         "photo": "renan_ferraro.jpeg"
       }
     ]
+  },
+  {
+    "id": 75,
+    "title": "AngularSP - Online",
+    "date": "28 de janeiro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Letramento LGBTQA+",
+        "speaker": "Rafaela Saori",
+        "description": "Muito além dos rótulos, valorizar a diversidade significa entender a história, reconhecer lutas marcantes como Stonewall, respeitar identidades e acolher quem somos de verdade. Nesse encontro, vamos refletir sobre a construção de comunidades inclusivas e o papel que cada um pode exercer e ajudar.",
+        "photo": "rafa_saori.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Pensar Hoje, Inovar Amanhã: O Impacto das Tendências de 2025 nas Carreiras Tecnológicas",
+        "speaker": "Bruna Xavier",
+        "description": "De inteligência artificial a novas arquiteturas digitais, vamos explorar como as tendências emergentes estão redefinindo nosso papel na tecnologia, as competências que serão indispensáveis para o futuro e as novas oportunidades que estão surgindo.",
+        "photo": "bruna_xavier.jpeg"
+      }
+    ]
   }
 ]
