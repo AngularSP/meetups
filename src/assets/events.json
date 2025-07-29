@@ -875,5 +875,28 @@
         "photo": "bruna_xavier.jpeg"
       }
     ]
+  },
+  {
+    "id": 76,
+    "title": "AngularSP - Online",
+    "date": "28 de julho",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Descomplicando o Redis: O Poder do Cache ao vivo",
+        "speaker": "Monalysa Klauck Yoshikawa",
+        "description": "Já ouviu falar em Redis, mas nunca entendeu seu real potencial? Nesta apresentação, vou te mostrar como esse banco de dados em memória pode transformar a performance das suas aplicações.",
+        "photo": "monalysa_yoshikawa.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Angular + Copilot + Cache: acelerando o dev com IA e performance em mente",
+        "speaker": "Matheus Augusto Xavier",
+        "description": "De inteligência artificial a novas arquiteturas digitais, vamos explorar como as tendências emergentes estão redefinindo nosso papel na tecnologia, as competências que serão indispensáveis para o futuro e as novas oportunidades que estão surgindo.",
+        "photo": "matheus_augusto_xavier.jpeg"
+      }
+    ]
   }
 ]
