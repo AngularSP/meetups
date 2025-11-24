@@ -898,5 +898,51 @@
         "photo": "matheus_augusto_xavier.jpeg"
       }
     ]
+  },
+  {
+    "id": 77,
+    "title": "AngularSP - Online",
+    "date": "28 de outubro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Programação declarativa e imperativa no Angular diferença e benefícios",
+        "speaker": "Andressa Palmieri",
+        "description": "Especialista em Angular e JavaScript, desenvolvo aplicações web acessíveis, escaláveis e de alto desempenho. Desde 2020 faço parte da Accenture, onde foco meu trabalho na qualidade do código, experiência do usuário e melhoria contínua.",
+        "photo": "andressa_palmieri.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Mergulhe na componentização do Angular!",
+        "speaker": "Vito Neto",
+        "description": "Partindo da sua experiência inicial com HTML/CSS/JS puro, esta palestra explica o porquê de os componentes existirem e como eles resolvem problemas de escalabilidade, organização e manutenção. Através de exemplos práticos em Angular, você aprenderá o como da componentização e, o mais importante, como eles se comunicam de forma eficiente para criar uma arquitetura estruturada.",
+        "photo": "vito_neto.jpeg"
+      }
+    ]
+  },
+   {
+    "id": 78,
+    "title": "AngularSP - Online",
+    "date": "25 de novembro",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Gestão de Produtos de AI - Do Zero ao AI-Driven",
+        "speaker": "Max Melo",
+        "description": "Um guia prático para PMs e POs que precisam liderar iniciativas de IA sem ter background",
+        "photo": "max_melo.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Go, por onde começar?",
+        "speaker": "Elton Minetto",
+        "description": "Nesta talk eu dou algumas sugestões de como devs e empresas podem começar a usar a linguagem Go em seus projetos",
+        "photo": "elton_minetto.jpeg"
+      }
+    ]
   }
 ]
