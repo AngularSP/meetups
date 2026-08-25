@@ -944,5 +944,28 @@
         "photo": "elton_minetto.jpeg"
       }
     ]
+  },
+  {
+    "id": 87,
+    "title": "AngularSP - Online",
+    "date": "25 de Agosto",
+    "primaryColor": "darkOrange",
+    "secondaryColor": "gold",
+    "talks": [
+      {
+        "subtitle": "TALK #1",
+        "title": "Microfrontends como Estratégia para Escalar o Desenvolvimento",
+        "speaker": "Gabriel Nogueira",
+        "description": "Gabriel apresenta como a arquitetura de Microfrontends pode acelerar o desenvolvimento de aplicações, promovendo reutilização de componentes, autonomia entre equipes, escalabilidade e maior eficiência na evolução de produtos digitais.",
+        "photo": "gabriel_nogueira.jpeg"
+      },
+      {
+        "subtitle": "TALK #2",
+        "title": "Perspectivas de Mercado e Carreira com Alessandra Nastassja",
+        "speaker": "Alessandra Nastassja",
+        "description": "Alessandra Nastassja compartilha sua visão sobre o mercado de tecnologia, tendências da área e estratégias para construir uma carreira sólida, explorando oportunidades, desafios e competências que fazem a diferença para profissionais de tecnologia.",
+        "photo": "alessandra_nastassja.jpeg"
+      }
+    ]
   }
 ]
